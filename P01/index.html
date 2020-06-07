@@ -1,0 +1,259 @@
+<!--the basic HTML structure is based on wk01-wk04 tutorials from IAT339 (by P. Brokenshire)-->
+<!--reserved characters are referenced from https://developer.mozilla.org/en-US/docs/Glossary/Entity by MDN Contributors (2019)-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styleguide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Styleguide</h1>
+    <p>The Styleguide demonstrates how to create elements of an interface including names and sample codes.</p>
+
+    <nav>
+        <a href="index.html">Styleguide</a>
+        <a href="wireframes.html">Wireframes</a>
+        <a href="citations.html">Citations</a>
+    </nav>
+<br>
+<br><hr>
+
+    <h1>Basic Interactive Elements</h1>
+
+    <section id="button">
+        <h2>Call To Action Button</h2>
+        <h3>Rendered element:</h3>
+        <button class="button">Default Button</button>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;a href=&quot;#&quot; button class=&quot;button&quot;&gt;Default Button&lt;/a&gt;
+        </code>
+    </section>
+
+    <section id="link">
+        <h2>Link</h2>
+        <h3>Rendered element:</h3>
+        <p>This is a <a href="https://en.wikipedia.org/wiki/Robot" target="blank">link</a> within a text.</p>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;p&gt;
+            This is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Robot&quot; target=&quot;blank&quot;&gt;link&lt;/a&gt;within a text. 
+            &lt;/p&gt;
+        </code>
+    </section>
+
+    <section id="form_buttons">
+        <h2>Submit/Reset Button</h2>
+        <h3>Rendered element:</h3>
+        <button class="submit_button">Submit</button>
+        <button class="reset_button">Reset</button>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;a href=&quot;#&quot; button class=&quot;form_button&quot;&gt;Submit&lt;/a&gt; 
+            <br><br>
+            &lt;a href=&quot;#&quot; button class=&quot;form_button&quot;&gt;Reset&lt;/a&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>Text Input Field With Labels</h2>
+        <h3>Rendered element:</h3>
+        <form method="post" action="#">
+            <label for="form-name">Name</label>
+            <input class="text-field" type="text" id="form-name" placeholder="Jane Doe">
+        </form>
+        <h3>Sample code:</h3>
+        <code>
+            &lt;form method=&quot;post&quot; action=&quot;#&quot;&gt;
+            <br><br>
+            &lt;label for=&quot;form-name&gt;Name&lt;/label&gt;
+            <br><br>
+            &lt;input class=&quot;text-field&quot; type=&quot;text&quot; id=&quot;form-name&quot; placeholder=&quot;Jane Doe&quot;&gt;
+            <br><br>
+            &lt;/form&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>Colour Swatches</h2>
+        <h3>Rendered element:</h3>
+        <div class="color-swatch">
+            <div class="accent">
+                <p>#F5F3EC</p>
+            </div>
+            <div class="black">
+                <p>#000000</p>
+            </div>
+            <div class="white">
+                <p>#FFFFFF</p>
+            </div>
+        </div>
+        <h3>Sample code:</h3>
+        <code>color:#E62B1E;</code>
+    </section>
+    <br><hr>
+
+    <h1>Text Styling</h1>
+
+    <section id="#heading">
+        <h2>Heading 1</h2>
+        <h3>Rendered element:</h3>
+        <h1>Header 1</h1>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;h1&gt;Header 1&lt;/h1&gt;
+        </code>
+
+        <h2>Heading 2</h2>
+        <h3>Rendered element:</h3>
+        <h1>Header 2</h1>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;h2&gt;Header 2&lt;/h2&gt;
+        </code>
+
+        <h2>Heading 3</h2>
+        <h3>Rendered element:</h3>
+        <h1>Header 3</h1>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;h3&gt;Header 3&lt;/h3&gt;
+        </code>
+    </section>
+
+    <section id="paragraph">
+        <h2>Paragraph</h2>
+        <h3>Rendered element:</h3>
+        <p>This is a paragraph. See sample code below.</p>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;p&gt;
+            This is a paragraph.
+            &lt;/p&gt;
+        </code>
+    </section>
+
+    <section id="ol_list">
+        <h2>Numbered List</h2>
+        <h3>Rendered element:</h3>
+        <ol>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ol>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;ol&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;/ol&gt;
+        </code>
+    </section>
+
+    <section id="ul_list">
+        <h2>Bulleted List</h2>
+        <h3>Rendered element:</h3>
+        <ul>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+        </ul>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;ul&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;li&gt;Item&lt;/li&gt;
+            &lt;/ul&gt;
+        </code>
+    </section>
+    <br><hr>
+
+    <h1>Modular Pattern Elements</h1>
+
+
+    <section>
+        <h2>Main Navigation</h2>
+        <h3>Rendered element:</h3>
+        <nav class="box">
+            <a class="box-item-nav main-nav" href="#">HOME</a>
+            <a class="box-item-nav main-nav" href="#">New Arrivals</a>
+            <a class="box-item-nav main-nav" href="#">Sale</a>
+            <a class="box-item-nav main-nav" href="#">Reworked</a>
+            <a class="box-item-nav main-nav" href="#">Sign Up</a>
+        </nav>
+        <h3> Sample code</h3>
+        <code>&lt;a class=&quot;box-item-nav main-nav&quot; href=&quot;#&quot;&gt;Menu Item&lt;/a&gt;</code>
+    </section>
+
+    <section>
+        <h2>Product Listing</h2>
+        <h3>Rendered element:</h3>
+        <div class="box content-overview">
+            <div class="box-item-content">
+                <img src="images/demo.jpg" alt="demo_image">
+            </div>
+            <div class="box-item-content">
+                <h3>Product Name</h3>
+                <p>Fusce vestibulum luctus lacus ut sodales. Etiam maximus hendrerit diam. Quisque facilisis vulputate
+                    augue in maximus.
+                </p>
+                <a class="button-nav" href="#">Learn More</a>
+            </div>
+        </div>
+
+        <h3> Sample code</h3>
+        <code>
+          &lt;div class=&quot;box content-overview&quot;&gt;</br>
+            <br>&lt;div class=&quot;box-item-content&quot;&gt;</br>
+            <br>  Box item content<br>
+            <br>&lt;/div&gt;</br>
+          <br>&lt;/div&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>Website Grid Structure</h2>
+        <h3>Rendered element:</h3>
+        <div class="box grid-demo">
+            <div class="box-item-demo"> Section 1</div>
+            <div class="box-item-demo"> Section 2</div>
+            <div class="box-item-demo"> Section 3</div>
+        </div>
+        <h3>Sample Code:</h3>
+        <code>
+            &lt;div class=&quot;box grid-demo&quot;&gt;</br>
+              <br>&lt;div class=&quot;box-item-demo&quot;&gt;Section&lt;/div&gt;</br>
+            <br>&lt;/div&gt;
+          </code>
+    </section>
+
+    <section>
+        <h2>Sale Hero Banner Module</h2>
+        <!-- Hero Image tutorial, 2020 June 01, https://www.w3schools.com/howto/howto_css_hero_image.asp -->
+        <h3>Rendered element:</h3>
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>40% Sale</h1>
+              <p>Hurry, only today we have 40% sitewide sale!</p>
+              <button class="button">Browse</button>
+            </div>
+          </div>
+        
+    </section>
+
+    
+
+</body>
+
+</html>
