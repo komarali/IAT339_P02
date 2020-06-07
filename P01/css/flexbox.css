@@ -1,0 +1,64 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+@media (min-width: 40em) {
+
+	.box {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-content: flex-end;
+
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+
+		-webkit-justify-content: space-around;
+		-ms-justify-content: space-around;
+		justify-content: space-around;
+	}
+}
+
+	.main-nav{
+		text-decoration: none;
+		font-size: 1rem;
+		padding: 2rem 3rem 2rem 3rem;
+
+		flex: 1;
+		}
+		
+		.main-nav:active, a:hover, a:focus {
+			color: rgb(0,0,0); 
+			font-weight: 600;
+			text-decoration: underline;
+		}
+
+
+
+		
+	
+		
+		
+		@media (max-width: 30em) {
+
+		.box-item-content {
+
+			padding: 1rem;
+			flex: 1 1 auto;
+		}
+
+		}
+		
+
+		
+		.box-item-demo{
+			background-color: rgb(80,80,80);
+			color: white;
+			text-align: center;
+			border: 1px solid white;
+			flex:1 1 auto;
+			-webkit-flex: 1;
+			-ms-flex: 1;
+		}
+		
+
