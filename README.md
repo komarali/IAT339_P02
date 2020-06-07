@@ -1,6 +1,8 @@
-#IAT 339 Project 2
+# IAT 339 Project 2
 
-##Team
+## Team
+
 Alvin Leung - 301329378
+
 Kenzhe Omarali - 301307092
 
