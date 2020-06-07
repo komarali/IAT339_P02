@@ -1,0 +1,38 @@
+body {
+  font-family: "din-2014", sans-serif;
+  margin: 0em;
+  padding: 0em;
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: 1em;
+}
+h2 {
+  font-size:2em;
+}
+
+.responsive-container{
+  width:80vw;
+  margin: auto;
+}
+
+.full-width {
+  width:100%;
+}
+
+section.dark-section {
+  background-color: #3E3E3E;
+  padding-top: 2em;
+}
+
+.fullscreen-container { 
+  width:100vw;
+  height:100vh;
+}
+
+#hero > h1 {
+  font-size: 6em;
+  line-height: 50vh;
+}

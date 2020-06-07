@@ -1,0 +1,536 @@
+{
+  "ftp://ftp.sfu.ca@kkl64": {
+    "pub_html": {
+      "IAT339": {
+        "Project 1": {},
+        "Project1": {
+          ".DS_Store": {
+            "type": "-",
+            "size": 6148,
+            "lmtime": 0,
+            "modified": false
+          },
+          "branding.html": {
+            "type": "-",
+            "size": 4203,
+            "lmtime": 0,
+            "modified": false
+          },
+          "citation.html": {
+            "type": "-",
+            "size": 2136,
+            "lmtime": 0,
+            "modified": false
+          },
+          "img": {},
+          "index.html": {
+            "type": "-",
+            "size": 31283,
+            "lmtime": 0,
+            "modified": true
+          },
+          "index_old.html": {
+            "type": "-",
+            "size": 7017,
+            "lmtime": 0,
+            "modified": false
+          },
+          "structure.html": {
+            "type": "-",
+            "size": 4131,
+            "lmtime": 0,
+            "modified": true
+          },
+          "style.css": {
+            "type": "-",
+            "size": 11442,
+            "lmtime": 0,
+            "modified": true
+          },
+          "styleguide.html": {
+            "type": "-",
+            "size": 34429,
+            "lmtime": 0,
+            "modified": true
+          }
+        }
+      }
+    },
+    "ugrad1": {
+      "kkl64": {
+        "pub_html": {
+          "IAT339": {
+            "Project 1": {
+              "img": {},
+              "index.html": {
+                "type": "-",
+                "size": 339,
+                "lmtime": 1590146124040,
+                "modified": false
+              },
+              "style.css": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1590146030768,
+                "modified": false
+              }
+            },
+            "Project1": {
+              ".DS_Store": {
+                "type": "-",
+                "size": 6148,
+                "lmtime": 1590146963957,
+                "modified": false
+              },
+              "branding.html": {
+                "type": "-",
+                "size": 4203,
+                "lmtime": 1591395711545,
+                "modified": false
+              },
+              "citation.html": {
+                "type": "-",
+                "size": 2136,
+                "lmtime": 1591400367154,
+                "modified": false
+              },
+              "img": {
+                ".DS_Store": {
+                  "type": "-",
+                  "size": 6148,
+                  "lmtime": 1591402859927,
+                  "modified": false
+                },
+                "Asset 6.svg": {
+                  "type": "-",
+                  "size": 1788,
+                  "lmtime": 1590148559216,
+                  "modified": false
+                },
+                "Asset 7.svg": {
+                  "type": "-",
+                  "size": 1606,
+                  "lmtime": 1590148565541,
+                  "modified": false
+                },
+                "Frame 1.png": {
+                  "type": "-",
+                  "size": 109467,
+                  "lmtime": 1590149911076,
+                  "modified": false
+                },
+                "Frame 7.png": {
+                  "type": "-",
+                  "size": 110965,
+                  "lmtime": 1590149911077,
+                  "modified": false
+                },
+                "GreyboxWireframe": {
+                  "Landing Desktop-1.png": {
+                    "type": "-",
+                    "size": 117578,
+                    "lmtime": 1590771395552,
+                    "modified": false
+                  },
+                  "Landing Desktop-2.png": {
+                    "type": "-",
+                    "size": 118539,
+                    "lmtime": 1590771395553,
+                    "modified": false
+                  },
+                  "Landing Desktop-3.png": {
+                    "type": "-",
+                    "size": 83242,
+                    "lmtime": 1590771395553,
+                    "modified": false
+                  },
+                  "Landing Desktop-4.png": {
+                    "type": "-",
+                    "size": 86823,
+                    "lmtime": 1590771395553,
+                    "modified": false
+                  },
+                  "Landing Desktop.png": {
+                    "type": "-",
+                    "size": 151718,
+                    "lmtime": 1590771395552,
+                    "modified": false
+                  },
+                  "Payment Desktop-1.png": {
+                    "type": "-",
+                    "size": 62790,
+                    "lmtime": 1590771395552,
+                    "modified": false
+                  },
+                  "Payment Desktop-2.png": {
+                    "type": "-",
+                    "size": 56920,
+                    "lmtime": 1590771395553,
+                    "modified": false
+                  },
+                  "Payment Desktop-3.png": {
+                    "type": "-",
+                    "size": 66226,
+                    "lmtime": 1590771395553,
+                    "modified": false
+                  },
+                  "Payment Desktop-4.png": {
+                    "type": "-",
+                    "size": 37093,
+                    "lmtime": 1590771395554,
+                    "modified": false
+                  },
+                  "Payment Desktop-5.png": {
+                    "type": "-",
+                    "size": 23528,
+                    "lmtime": 1590771395554,
+                    "modified": false
+                  },
+                  "Payment Desktop-6.png": {
+                    "type": "-",
+                    "size": 43867,
+                    "lmtime": 1590771395554,
+                    "modified": false
+                  },
+                  "Payment Desktop.png": {
+                    "type": "-",
+                    "size": 61733,
+                    "lmtime": 1590771395551,
+                    "modified": false
+                  },
+                  "iPhone 8 - 1.png": {
+                    "type": "-",
+                    "size": 101537,
+                    "lmtime": 1590771395555,
+                    "modified": false
+                  },
+                  "new": {
+                    "Leave Review-1.png": {
+                      "type": "-",
+                      "size": 128819,
+                      "lmtime": 1591398958347,
+                      "modified": false
+                    },
+                    "Leave Review.png": {
+                      "type": "-",
+                      "size": 249865,
+                      "lmtime": 1591398978249,
+                      "modified": false
+                    },
+                    "Payment flow - new-1.png": {
+                      "type": "-",
+                      "size": 252866,
+                      "lmtime": 1591398246191,
+                      "modified": false
+                    },
+                    "Payment flow - new.png": {
+                      "type": "-",
+                      "size": 294246,
+                      "lmtime": 1591398246190,
+                      "modified": false
+                    },
+                    "Payment flow - returning-1.png": {
+                      "type": "-",
+                      "size": 286623,
+                      "lmtime": 1591398246191,
+                      "modified": false
+                    },
+                    "Payment flow - returning.png": {
+                      "type": "-",
+                      "size": 258359,
+                      "lmtime": 1591398246190,
+                      "modified": false
+                    },
+                    "filtering products-1.png": {
+                      "type": "-",
+                      "size": 263504,
+                      "lmtime": 1591398246192,
+                      "modified": false
+                    },
+                    "filtering products.png": {
+                      "type": "-",
+                      "size": 281031,
+                      "lmtime": 1591398246191,
+                      "modified": false
+                    },
+                    "look for item flow-1.png": {
+                      "type": "-",
+                      "size": 470946,
+                      "lmtime": 1591398246192,
+                      "modified": false
+                    },
+                    "look for item flow.png": {
+                      "type": "-",
+                      "size": 237188,
+                      "lmtime": 1591398246189,
+                      "modified": false
+                    }
+                  }
+                },
+                "SVG": {
+                  ".DS_Store": {
+                    "type": "-",
+                    "size": 6148,
+                    "lmtime": 1590148575054,
+                    "modified": false
+                  },
+                  "Asset 1.svg": {
+                    "type": "-",
+                    "size": 1117,
+                    "lmtime": 1590146950719,
+                    "modified": false
+                  },
+                  "Asset 2.svg": {
+                    "type": "-",
+                    "size": 1034,
+                    "lmtime": 1590147551402,
+                    "modified": false
+                  },
+                  "Asset 6.svg": {
+                    "type": "-",
+                    "size": 1788,
+                    "lmtime": 1590148559216,
+                    "modified": false
+                  },
+                  "Asset 7.svg": {
+                    "type": "-",
+                    "size": 1606,
+                    "lmtime": 1590148565541,
+                    "modified": false
+                  },
+                  "logo.svg": {
+                    "type": "-",
+                    "size": 1117,
+                    "lmtime": 1590146950719,
+                    "modified": false
+                  }
+                },
+                "Structure.png": {
+                  "type": "-",
+                  "size": 84602,
+                  "lmtime": 1591401938726,
+                  "modified": false
+                },
+                "icons": {
+                  ".DS_Store": {
+                    "type": "-",
+                    "size": 6148,
+                    "lmtime": 1591388197610,
+                    "modified": false
+                  },
+                  "account-circle-line.svg": {
+                    "type": "-",
+                    "size": 719,
+                    "lmtime": 1591343821094,
+                    "modified": false
+                  },
+                  "shopping-cart-line.svg": {
+                    "type": "-",
+                    "size": 544,
+                    "lmtime": 1591388424654,
+                    "modified": false
+                  }
+                },
+                "keyboard-images": {
+                  ".DS_Store": {
+                    "type": "-",
+                    "size": 6148,
+                    "lmtime": 1591391493394,
+                    "modified": false
+                  },
+                  "large_2843_87CMYK_1.jpg": {
+                    "type": "-",
+                    "size": 386269,
+                    "lmtime": 1591388134593,
+                    "modified": false
+                  },
+                  "large_5027_large_DKON1861ST-USPDWWT1_2.jpg": {
+                    "type": "-",
+                    "size": 779252,
+                    "lmtime": 1591388015103,
+                    "modified": false
+                  },
+                  "large_5593_large_DKME1961ST-USPDAAT1_5.jpg": {
+                    "type": "-",
+                    "size": 314478,
+                    "lmtime": 1591387924325,
+                    "modified": false
+                  },
+                  "large_DKON1887-USPDZHBS_main.jpg": {
+                    "type": "-",
+                    "size": 78137,
+                    "lmtime": 1591388059201,
+                    "modified": false
+                  },
+                  "large_KB181-Black_2.jpg": {
+                    "type": "-",
+                    "size": 216512,
+                    "lmtime": 1591388092510,
+                    "modified": false
+                  },
+                  "large_KB181-Black_main.jpg": {
+                    "type": "-",
+                    "size": 118210,
+                    "lmtime": 1591388096601,
+                    "modified": false
+                  }
+                },
+                "logo-icon-only-grey.svg": {
+                  "type": "-",
+                  "size": 1041,
+                  "lmtime": 1591342894077,
+                  "modified": false
+                },
+                "logo.svg": {
+                  "type": "-",
+                  "size": 1788,
+                  "lmtime": 1590148559216,
+                  "modified": false
+                },
+                "logoBW.svg": {
+                  "type": "-",
+                  "size": 1133,
+                  "lmtime": 1590159386608,
+                  "modified": false
+                },
+                "logoBlack.svg": {
+                  "type": "-",
+                  "size": 997,
+                  "lmtime": 1590703290331,
+                  "modified": false
+                },
+                "logoColored.svg": {
+                  "type": "-",
+                  "size": 1788,
+                  "lmtime": 1590148559216,
+                  "modified": false
+                },
+                "logoColoured.svg": {
+                  "type": "-",
+                  "size": 1788,
+                  "lmtime": 1590148559216,
+                  "modified": false
+                },
+                "logoW.svg": {
+                  "type": "-",
+                  "size": 1718,
+                  "lmtime": 1590152877606,
+                  "modified": false
+                },
+                "persona expert.png": {
+                  "type": "-",
+                  "size": 110965,
+                  "lmtime": 1590149911077,
+                  "modified": false
+                },
+                "personaBeginner.png": {
+                  "type": "-",
+                  "size": 335676,
+                  "lmtime": 1590150371876,
+                  "modified": false
+                },
+                "personaBeginner.svg": {
+                  "type": "-",
+                  "size": 5317056,
+                  "lmtime": 1590150480480,
+                  "modified": true
+                },
+                "personaExpert.png": {
+                  "type": "-",
+                  "size": 348049,
+                  "lmtime": 1590150371877,
+                  "modified": false
+                },
+                "personaExpert.svg": {
+                  "type": "-",
+                  "size": 3525880,
+                  "lmtime": 0,
+                  "modified": false
+                },
+                "sitemap.png": {
+                  "type": "-",
+                  "size": 84602,
+                  "lmtime": 1591401938726,
+                  "modified": false
+                },
+                "wells-chan-iyuEqZS9LPc-unsplash.jpg": {
+                  "type": "-",
+                  "size": 2668006,
+                  "lmtime": 1590141705751,
+                  "modified": false
+                },
+                "wireframe_browse_product.png": {
+                  "type": "-",
+                  "size": 1994015,
+                  "lmtime": 1590157657206,
+                  "modified": false
+                },
+                "wireframe_checkout.png": {
+                  "type": "-",
+                  "size": 1734301,
+                  "lmtime": 1590157479962,
+                  "modified": false
+                },
+                "wireframe_checkout_cont.png": {
+                  "type": "-",
+                  "size": 1068078,
+                  "lmtime": 1590157463348,
+                  "modified": false
+                },
+                "wireframe_compare.png": {
+                  "type": "-",
+                  "size": 2116946,
+                  "lmtime": 1590157436968,
+                  "modified": false
+                },
+                "wireframe_leavereview.png": {
+                  "type": "-",
+                  "size": 768027,
+                  "lmtime": 1590157527929,
+                  "modified": false
+                },
+                "wireframe_search_product.png": {
+                  "type": "-",
+                  "size": 1288899,
+                  "lmtime": 1590157538312,
+                  "modified": false
+                }
+              },
+              "index.html": {
+                "type": "-",
+                "size": 31283,
+                "lmtime": 1591495949949,
+                "modified": false
+              },
+              "index_old.html": {
+                "type": "-",
+                "size": 7017,
+                "lmtime": 1591394051548,
+                "modified": false
+              },
+              "structure.html": {
+                "type": "-",
+                "size": 4131,
+                "lmtime": 1591402018408,
+                "modified": false
+              },
+              "style.css": {
+                "type": "-",
+                "size": 11442,
+                "lmtime": 1591398581061,
+                "modified": false
+              },
+              "styleguide.html": {
+                "type": "-",
+                "size": 34429,
+                "lmtime": 1591395477135,
+                "modified": false
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$version": 1
+}

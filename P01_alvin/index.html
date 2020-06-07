@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Keytopia</title>
+  <link rel="stylesheet" href="https://use.typekit.net/fku8kit.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="responsive-container">
+    <a class="active" href="index.html">Style Guide</a>
+    <a href="branding.html">Branding</a>
+    <a href="structure.html">Website Structure</a>
+    <a href="citation.html">Citation</a>
+  </nav>
+
+  <header class="responsive-container">
+    <h1>Style Guide</h1>
+    <h3>Table of contents</h3>
+    <ol>
+      <li><a href="#interactive-element">Interactive Elements</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#modular-patterns">Modular Pattern Elements</a></li>
+      <li><a href="#layout-overview">Layout</a></li>
+    </ol>
+  </header>
+
+  <!-- 
+
+    DESIGN ELEMENT
+      
+    Interactive Element
+
+      
+  -->
+  <section id="interactive-element" class="full-width light-section">
+    <div class="stickyTitle">
+      <h2>Interactive Element</h2>
+      <h3>Code and Example</h3>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>In-text Link</h3>
+      </div>
+      <div class="styleguide-preview">
+        <a href="#">In-text Link</a>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;a href=&quot;#&quot;&gt;In-text Link&lt;/a&gt;
+        </code>
+        <code class="css layout__col-s">
+          a {<br>
+          &nbsp;&nbsp;color: #3E3E3E;<br>
+          &nbsp;&nbsp;transition: color;<br>
+          &nbsp;&nbsp;transition-duration: .3s;<br>
+          &nbsp;&nbsp;transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);<br>
+          }<br>
+          a:hover {<br>
+          &nbsp;&nbsp;color: #603DFC;<br>
+          }          
+        </code>
+      </div>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>Call to action button</h3>
+      </div>
+      <div class="styleguide-preview">
+        <a href="#" class="button-primary">Save the world</a>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;a href=&quot;#&quot; class=&quot;button-primary&quot;&gt;Save the world&lt;/a&gt;
+        </code>
+        <code class="css layout__col-s">
+          .button-primary, .button-secondary {<br>
+          &nbsp;&nbsp;text-decoration: none;<br>
+          &nbsp;&nbsp;padding-left: 1.5em;<br>
+          &nbsp;&nbsp;padding-right: 1.5em;<br>
+          &nbsp;&nbsp;padding-top: .75em;<br>
+          &nbsp;&nbsp;padding-bottom: .75em;<br>
+          &nbsp;&nbsp;text-transform: uppercase;<br>
+          &nbsp;&nbsp;letter-spacing: .1em;<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;border-radius: .25em;<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;transform: scale(1);<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;transition: transform, box-shadow;<br>
+          &nbsp;&nbsp;transition-duration: .3s;<br>
+          &nbsp;&nbsp;transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);<br>
+          }<br>
+          <br>
+          .button-primary:active, .button-secondary:active {<br>
+          &nbsp;&nbsp;transform: scale(.95);<br>
+          }<br>
+          <br>
+          .button-primary {<br>
+          &nbsp;&nbsp;background-color: #603DFC;<br>
+          &nbsp;&nbsp;color: #FFF;<br>
+          &nbsp;&nbsp;box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);<br>
+          }<br>
+          <br>
+          .button-primary:hover, .button-primary:focus{<br>
+          &nbsp;&nbsp;background-color: #7a5cff;<br>
+          &nbsp;&nbsp;color: #FFF;<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);<br>
+          }
+        </code>
+      </div>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>Submit and reset button for forms</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div>
+          <button type="submit" class="button-primary">Submit</button>
+          <button type="reset" class="button-secondary">Reset</button>
+        </div>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;div&gt;<br>
+          &nbsp;&nbsp;&lt;button type=&quot;submit&quot; class=&quot;button-primary&quot;&gt;Submit&lt;/button&gt;<br>
+          &nbsp;&nbsp;&lt;button type=&quot;reset&quot; class=&quot;button-secondary&quot;&gt;Reset&lt;/button&gt;<br>
+          &lt;/div&gt;
+        </code>
+        <code class="css layout__col-s">
+          input, button {<br>
+          &nbsp;&nbsp;font-size: 1rem;<br>
+          }<br><br>
+          button {<br>
+          &nbsp;&nbsp;border: none;<br>
+          }<br>
+          .button-primary, .button-secondary {<br>
+          &nbsp;&nbsp;text-decoration: none;<br>
+          &nbsp;&nbsp;padding-left: 1.5em;<br>
+          &nbsp;&nbsp;padding-right: 1.5em;<br>
+          &nbsp;&nbsp;padding-top: .75em;<br>
+          &nbsp;&nbsp;padding-bottom: .75em;<br>
+          &nbsp;&nbsp;text-transform: uppercase;<br>
+          &nbsp;&nbsp;letter-spacing: .1em;<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;border-radius: .25em;<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;transform: scale(1);<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;transition: transform, box-shadow;<br>
+          &nbsp;&nbsp;transition-duration: .3s;<br>
+          &nbsp;&nbsp;transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);<br>
+          }<br>
+          <br>
+          .button-primary:active, .button-secondary:active {<br>
+          &nbsp;&nbsp;transform: scale(.95);<br>
+          }<br>
+          <br>
+          .button-primary {<br>
+          &nbsp;&nbsp;background-color: #603DFC;<br>
+          &nbsp;&nbsp;color: #FFF;<br>
+          &nbsp;&nbsp;box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);<br>
+          }<br>
+          <br>
+          .button-primary:hover, .button-primary:focus{<br>
+          &nbsp;&nbsp;background-color: #7a5cff;<br>
+          &nbsp;&nbsp;color: #FFF;<br>
+          &nbsp;&nbsp;<br>
+          &nbsp;&nbsp;box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);<br>
+          }<br>
+          <br>
+          .button-secondary {<br>
+          &nbsp;&nbsp;color: #603DFC;<br>
+          }<br>
+        </code>
+      </div>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>A text input field and a label</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" placeholder="My Username">
+        </div>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;div&gt;<br>
+          &nbsp;&nbsp;&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;user_name&quot; placeholder=&quot;My Username&quot;&gt;
+          &nbsp;&nbsp;&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;user_name&quot;&gt;<br>
+          &lt;/div&gt;
+        </code>
+        <code class="css layout__col-s">
+          input, button {<br>
+          &nbsp;font-size: 1rem;<br>
+          }<br><br>
+          label {<br>
+          &nbsp;&nbsp;display: block;<br>
+          &nbsp;&nbsp;text-transform: uppercase;<br>
+          &nbsp;&nbsp;letter-spacing: .1em;<br>
+          &nbsp;&nbsp;margin-bottom:.5em;<br>
+          }<br>
+          <br>
+          input[type="text"] {<br>
+          &nbsp;&nbsp;display: block;<br>
+          &nbsp;&nbsp;padding:.75em;<br>
+          &nbsp;&nbsp;border: .15em solid #3E3E3E;<br>
+          &nbsp;&nbsp;border-radius: .25em;<br>
+          }<br>
+          <br>
+          input[type="text"]:focus {<br>
+          &nbsp;&nbsp;border-color: #603DFC;<br>
+          &nbsp;&nbsp;outline: none;<br>
+          }
+          
+        </code>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+    
+    DESIGN ELEMENT
+    
+    Typeography
+    
+   -->
+  <section id="typography" class="full-width light-section">
+    <div class="stickyTitle">
+      <h2>Typography</h2>
+      <h3>Code and Example</h3>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>Header 1</h3>
+      </div>
+      <div class="styleguide-preview">
+        <h1>Header 1</h1>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;h1&gt;Header 1&lt;/h1&gt;
+        </code>
+        <code class="css layout__col-s">
+          h1 { <br/>
+          &nbsp;&nbsp;font-weight: bold;<br>
+          &nbsp;&nbsp;font-size:6rem;<br/>
+          &nbsp;&nbsp;margin: 0em;<br>
+          }            
+        </code>
+      </div>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>Header 2</h3>
+      </div>
+      <div class="styleguide-preview">
+        <h2>Header 2</h2>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;h2&gt;Header 2&lt;/h2&gt;
+        </code>
+        <code class="css layout__col-s">
+          h2 {<br/>
+          &nbsp;&nbsp;font-weight: bold;<br>
+          &nbsp;&nbsp;font-size:3rem;<br/>
+          &nbsp;&nbsp;margin: 0em;<br>
+          }          
+        </code>
+      </div>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>Header 3</h3>
+      </div>
+      <div class="styleguide-preview">
+        <h3>Header 3</h3>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;h3&gt;Header 3&lt;/h3&gt;
+        </code>
+        <code class="css layout__col-s">
+          h3 {<br>
+          &nbsp;&nbsp;font-weight: bold;<br>
+          &nbsp;&nbsp;text-transform: uppercase;<br>
+          &nbsp;&nbsp;letter-spacing: .15em;<br>
+          &nbsp;&nbsp;font-size: 1rem;<br>
+          &nbsp;&nbsp;margin: 0em;<br>
+          }
+        </code>
+      </div>
+      <div class="responsive-container">
+        <div>
+          <h3>Paragraph</h3>
+        </div>
+        <div class="styleguide-preview">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="styleguide-code layout">
+          <code class="html layout__col-s">
+            &lt;p&gt;Lorem ipsum dolor sit amet, .... mollit anim id est laborum.&lt;/p&gt;
+          </code>
+          <code class="css layout__col-s">
+            p {<br>
+            &nbsp;&nbsp;font-size: 1rem;<br>
+            &nbsp;&nbsp;font-weight:normal<br>
+            }
+          </code>
+        </div>
+    </div>
+    <div class="responsive-container">
+      <div>
+        <h3>Bullet List</h3>
+      </div>
+      <div class="styleguide-preview">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;ul&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+          &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+          &lt;/ul&gt;
+        </code>
+        <code class="css layout__col-s">
+          ul, ol {<br>
+          &nbsp;&nbsp;padding-left: 2em;<br>
+          }
+        </code>
+      </div>
+    </div>
+    <div class="responsive-container">
+    <div>
+      <h3>Numbered List</h3>
+    </div>
+    <div class="styleguide-preview">
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    </div>
+    <div class="styleguide-code layout">
+      <code class="html layout__col-s">
+        &lt;ol&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+        &nbsp;&nbsp;&lt;li&gt;Item 3&lt;/li&gt;<br>
+        &lt;/ol&gt;
+      </code>
+      <code class="css layout__col-s">
+        ul, ol {<br>
+        &nbsp;&nbsp;padding-left: 2em;<br>
+        }
+      </code>
+    </div>
+  </section>
+
+  <section id="modular-patterns" class="full-width light-section">
+    <div class="stickyTitle">
+      <h2>Modular Pattern Elements</h2>
+      <h3>Code and Examples</h3>
+    </div>
+
+    <div class="responsive-container">
+      <div>
+        <h3>Navigation Module</h3>
+      </div>
+      <div class="styleguide-preview">
+        <nav class="nav-container">
+          <div class="nav-main">
+            <a class="logo" href="#">
+              <img src="img/logo-icon-only-grey.svg" alt="Logo" class="nav-logo">
+            </a>
+            <a class="active" href="#">Shop</a>
+            <a href="#">Building Guide</a>
+            <a href="#">About</a>
+          </div>
+          <div class="nav-tools">
+            <a href="#">
+              <img src="img/icons/account-circle-line.svg" alt="Login to account">
+            </a>
+            <a href="#">
+              <img src="img/icons/shopping-cart-line.svg" alt="Shopping Cart">
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s">
+          &lt;nav class=&quot;nav-container&quot;&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;nav-main&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;logo&quot; href=&quot;#&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;img/logo-icon-only-grey.svg&quot; alt=&quot;Logo&quot; class=&quot;nav-logo&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a class=&quot;active&quot; href=&quot;#&quot;&gt;Shop&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;Building Guide&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;<br>
+          &nbsp;&nbsp;&lt;/div&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;nav-tools&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;img/icons/account-circle-line.svg&quot; alt=&quot;Login to account&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=&quot;img/icons/shopping-cart-line.svg&quot; alt=&quot;Shopping Cart&quot;&gt;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+          &nbsp;&nbsp;&lt;/div&gt;<br>
+          &lt;/nav&gt;<br>
+        </code>
+        <code class="css layout__col-s">
+          nav.nav-container, .nav-main {<br>
+          &nbsp;&nbsp;display: flex;<br>
+          &nbsp;&nbsp;height: auto;<br>
+          &nbsp;&nbsp;align-items: center;<br>
+          }<br>
+          <br>
+          .nav-main > a {<br>
+          &nbsp;&nbsp;display: inline-block;<br>
+          &nbsp;&nbsp;margin-right: 1em;<br>
+          &nbsp;&nbsp;font-size: 1.2em;<br>
+          &nbsp;&nbsp;text-decoration: none;<br>
+          }<br>
+          <br>
+          .nav-main > a.active {<br>
+          &nbsp;&nbsp;font-weight: bold;<br>
+          }<br>
+          <br>
+          a.logo > img {<br>
+          &nbsp;&nbsp;height: 3rem;<br>
+          }<br>
+          <br>
+          div.nav-tools {<br>
+          &nbsp;&nbsp;display: inline-block;<br>
+          &nbsp;&nbsp;margin-left: auto;<br>
+          }<br>
+          <br>
+          div.nav-tools > a {<br>
+          &nbsp;&nbsp;margin-left:1em;<br>
+          }<br>
+        </code>
+      </div>
+
+      <div class="responsive-container">
+        <div>
+          <h3>Product Module</h3>
+        </div>
+        <div class="styleguide-preview">
+          <div class="product-container">
+            <a class="product-item">
+              <div class="product-item__info">
+                <div class="product-item__info__catagory">Keyboard</div>
+                <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+                <div class="product-item__info__price">$126</div>
+              </div>
+              <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+            </a>
+            
+            <a class="product-item">
+              <div class="product-item__info">
+                <div class="product-item__info__catagory">Keyboard</div>
+                <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+                <div class="product-item__info__price">$126</div>
+              </div>
+              <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+            </a>
+
+            <a class="product-item">
+              <div class="product-item__info">
+                <div class="product-item__info__catagory">Keyboard</div>
+                <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+                <div class="product-item__info__price">$126</div>
+              </div>
+              <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+            </a>
+
+            <a class="product-item">
+              <div class="product-item__info">
+                <div class="product-item__info__catagory">Keyboard</div>
+                <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+                <div class="product-item__info__price">$126</div>
+              </div>
+              <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+            </a>
+            
+            <a class="product-item">
+              <div class="product-item__info">
+                <div class="product-item__info__catagory">Keyboard</div>
+                <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+                <div class="product-item__info__price">$126</div>
+              </div>
+              <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+            </a>
+
+            <a class="product-item">
+              <div class="product-item__info">
+                <div class="product-item__info__catagory">Keyboard</div>
+                <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+                <div class="product-item__info__price">$126</div>
+              </div>
+              <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+           </a>
+
+           <a class="product-item">
+            <div class="product-item__info">
+              <div class="product-item__info__catagory">Keyboard</div>
+              <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+              <div class="product-item__info__price">$126</div>
+            </div>
+            <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+           </a>
+
+           <a class="product-item">
+            <div class="product-item__info">
+              <div class="product-item__info__catagory">Keyboard</div>
+              <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+              <div class="product-item__info__price">$126</div>
+            </div>
+            <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+           </a>
+
+           <a class="product-item">
+            <div class="product-item__info">
+              <div class="product-item__info__catagory">Keyboard</div>
+              <div class="product-item__info__title">Ducky One 2 Mini Pure White</div>
+              <div class="product-item__info__price">$126</div>
+            </div>
+            <img class="product-item__image" src="img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+           </a>
+          </div>
+        </div>
+      </div>
+
+        <div class="styleguide-code layout">
+          <code class="html layout__col-s">
+            &lt;div class=&quot;product-container&quot;&gt;<br>
+            &nbsp;&nbsp;&lt;a class=&quot;product-item&quot;&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;product-item__info&quot;&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;product-item__info__catagory&quot;&gt;Keyboard&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;product-item__info__title&quot;&gt;Ducky One 2 Mini Pure White&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class=&quot;product-item__info__price&quot;&gt;$126&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img class=&quot;product-item__image&quot; src=&quot;img/keyboard-images/large_5027_large_DKON1861ST-USPDWWT1_2.jpg&quot; alt=&quot;keyboard&quot;&gt;<br>
+            &nbsp;&nbsp;&lt;/a&gt;<br>
+            &nbsp;&nbsp;...other products ...<br>
+            &lt;/div&gt;
+          </code>
+          
+          <code class="css layout__col-s">
+            .product-container {<br>
+            &nbsp;&nbsp;display: grid;<br>
+            &nbsp;&nbsp;grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));<br>
+            &nbsp;&nbsp;column-gap: 1em;<br>
+            &nbsp;&nbsp;row-gap: 1em;<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            }<br>
+            <br>
+            a.product-item {<br>
+            &nbsp;&nbsp;cursor: pointer;<br>
+            &nbsp;&nbsp;display: block;<br>
+            &nbsp;&nbsp;position: relative;<br>
+            <br>
+            &nbsp;&nbsp;transition-property: filter;<br>
+            &nbsp;&nbsp;transition-duration: .1s;<br>
+            &nbsp;&nbsp;transition-timing-function: ease-in;<br>
+            }<br>
+            a.product-item:hover {<br>
+            &nbsp;&nbsp;filter: drop-shadow(0rem .5rem .3rem rgba(0,0,0,.2));<br>
+            }<br>
+            <br>
+            .product-item__info {<br>
+            &nbsp;&nbsp;display: block;<br>
+            &nbsp;&nbsp;position: absolute;<br>
+            &nbsp;&nbsp;top: 0em;<br>
+            &nbsp;&nbsp;left: 0em;<br>
+            &nbsp;&nbsp;padding: 1em;<br>
+            }<br>
+            <br>
+            .product-item__info__catagory {<br>
+            &nbsp;&nbsp;font-size: .8em;<br>
+            &nbsp;&nbsp;text-transform: uppercase;<br>
+            }<br>
+            .product-item__info__title {<br>
+            &nbsp;&nbsp;font-weight: bold;<br>
+            }<br>
+            <br>
+            .product-item__image {<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;border-radius: .25rem;<br>
+            }<br>
+          </code>
+        </div>
+      </div>
+
+        <div class="responsive-container">
+          <div>
+            <h3>Hero Advertising</h3>
+          </div>
+        </div>
+
+        <section class="hero-container">
+          <div class="responsive-container">
+            <h1>Summer Sale 2020</h1>
+            <p>All keyboards and switches up to 60% off</p>
+            <a href="#" class="button-primary" id="hero-cta">shop now</a>
+          </div>
+        </section>
+
+        <div class="responsive-container">
+          <div class="styleguide-code layout">
+            <code class="html layout__col-s">
+              &lt;section class=&quot;hero-container&quot;&gt;<br>
+              &nbsp;&nbsp;&lt;div class=&quot;responsive-container&quot;&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Summer Sale 2020&lt;/h1&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;All keyboards and switches up to 60% off&lt;/p&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;#&quot; class=&quot;button-primary&quot; id=&quot;hero-cta&quot;&gt;shop now&lt;/a&gt;<br>
+              &nbsp;&nbsp;&lt;/div&gt;<br>
+              &lt;/section&gt;<br>
+            </code>
+
+            <code class="css layout__col-s">
+              .hero-container {<br>
+              &nbsp;&nbsp;color: #FFF;<br>
+              &nbsp;&nbsp;background-image: url("img/keyboard-images/large_5593_large_DKME1961ST-USPDAAT1_5.jpg");<br>
+              &nbsp;&nbsp;padding-top: 10vh;<br>
+              &nbsp;&nbsp;min-height: 40vh;;<br>
+              }<br>
+              <br>
+              .hero-container > .responsive-container> h1 {<br>
+              &nbsp;&nbsp;margin: 0;<br>
+              &nbsp;&nbsp;max-width: 40rem;<br>
+              }<br>
+              <br>
+              .hero-container > .responsive-container > p {<br>
+              &nbsp;&nbsp;margin: 0;<br>
+              }<br>
+              <br>
+              .hero-container > .responsive-container > #hero-cta {<br>
+              &nbsp;&nbsp;margin-top: 2rem;<br>
+              }<br>
+            </code>
+          </div>
+        </div>
+  </section>
+
+  <section id="layout-overview" class="full-width purple-section">
+    <div class="stickyTitle">
+      <h2>Layout Grids Overview</h2>
+      <h3>The ingrediants for grid</h3>
+    </div>
+
+    <div class="responsive-container">
+      <div class="layout">
+        <div class="layout__col-s">
+          <h3>layout container</h3>
+          <p>Using flexbox, <em>.layout</em> is the container for layout columns. Everything about layout exist under this class. A typical grid stucture would look like this</p>
+          <ul>
+            <li>.layout</li>
+              <ul>
+                <li>.layout__col-<em>modifier</em></li>
+                <li>.layout__col-<em>modifier</em></li>
+              </ul>
+          </ul>
+        </div>
+        <div class="layout__col-s">
+          <h3>columns</h3>
+          <p>Inside each <em>.layout</em> container, there are resizable columns. They comes with 3 sizes, they will resize according to their .layout size. When the parent size is too small, they will collapse into a single column layout they are:</p>
+          <ul>
+            <li>.layout__col-s (small, occupy 1 poportion)</li>
+            <li>.layout__col-m (medium, occupy 2 poportion)</li>
+            <li>.layout__col-l (large, occupy 3 poportion)</li>
+          </ul>
+        </div>
+        <div class="layout__col-s">
+          <h3>Sidebar</h3>
+          <p>The special one here is the "side-bar" column, which is used to define a sidebar that won't grow and shrink when the browser resize. It will hide itself when the viewport is too small, possibily will reveal itself under user interaction(to be implemented).</p>
+          <ul>
+            <li>.layout__col-side-bar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="layout-example" class="full-width purple-section">
+
+    <div class="stickyTitle">
+      <h2>Layout Grids</h2>
+      <h3>Code and Examples</h3>
+    </div>
+
+    <div class="responsive-container">
+      <div>
+        <h3>One columns layout/full width layout</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div class="layout">
+          <div class="layout__col-l layout--frame">layout__col-l</div>
+        </div>
+      </div>
+  
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s dark-mode">
+          &lt;div class=&quot;layout&quot;&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-l&quot;&gt;layout__col-l&lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+      </div>
+    </div>
+
+    <div class="responsive-container">
+      <div>
+        <h3>two columns layout - same size</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div class="layout">
+          <div class="layout__col-s layout--frame">layout__col-s</div>
+          <div class="layout__col-s layout--frame">layout__col-s</div>
+        </div>
+      </div>
+
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s dark-mode">
+          &lt;div class=&quot;layout&quot;&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-s&quot;&gt;layout__col-s&lt;/div&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-s&quot;&gt;layout__col-s&lt;/div&gt;<br>
+          &lt;/div&gt;<br>
+        </code>
+      </div>
+    </div>
+    
+
+    <div class="responsive-container">
+      <div>
+        <h3>Two columns layout - different sizes</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div class="layout">
+          <div class="layout__col-s layout--frame">layout__col-s</div>
+          <div class="layout__col-l layout--frame">layout__col-l</div>
+        </div>
+      </div>
+
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s dark-mode">
+          &lt;div class=&quot;layout&quot;&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-s layout--frame&quot;&gt;layout__col-s&lt;/div&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-l layout--frame&quot;&gt;layout__col-l&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+      </div>
+    </div>
+
+    <div class="responsive-container">
+      <div>
+        <h3>Three columns layout</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div class="layout">
+          <div class="layout__col-s layout--frame">layout__col-s</div>
+          <div class="layout__col-s layout--frame">layout__col-s</div>
+          <div class="layout__col-s layout--frame">layout__col-s</div>
+        </div>
+      </div>
+
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s dark-mode">
+          &lt;div class=&quot;layout&quot;&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-s layout--frame&quot;&gt;layout__col-s&lt;/div&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-s layout--frame&quot;&gt;layout__col-s&lt;/div&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-s layout--frame&quot;&gt;layout__col-s&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+      </div>
+    </div>
+
+    <div class="responsive-container">
+      <div>
+        <h3>Two columns layout - sidebar and content</h3>
+      </div>
+      <div class="styleguide-preview">
+        <div class="layout">
+          <div class="layout__col-side-bar layout--frame">layout__col-side-bar</div>
+          <div class="layout__col-l layout--frame">layout__col-l</div>
+        </div>
+      </div>
+
+      <div class="styleguide-code layout">
+        <code class="html layout__col-s dark-mode">
+          &lt;div class=&quot;layout&quot;&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-side-bar layout--frame&quot;&gt;layout__col-side-bar&lt;/div&gt;<br>
+          &nbsp;&nbsp;&lt;div class=&quot;layout__col-l layout--frame&quot;&gt;layout__col-l&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+      </div>
+    </div>
+  </section>
+
+  <footer id="ending" class="full-width purple-section">
+    <div class="responsive-container">
+      <h3>up next</h3>
+      <a href="branding.html" class="button-primary">see branding</a>
+    </div>
+  </footer>
+  
+</body>
+</html>
