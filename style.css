@@ -44,11 +44,14 @@ Subscription
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
 }
 
 #subscription-email {
   display: inline-block;
   width: 15rem;
+  margin-bottom: 0.6rem;
 }
 
 .subscription-form {
