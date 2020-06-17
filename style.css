@@ -29,6 +29,7 @@ header {
 header > h1 {
   margin-bottom: 4rem;
 }
+
 img {
   max-width: 100%;
 }
@@ -114,18 +115,35 @@ h4 {
 }
 
 h3 {
-  font-size:2em;
+  font-size:1.2em;
   margin: 0em;
 }
 
 h2 {
-  font-size:3em;
+  font-size:2em;
   margin: 0em;
 }
 
 h1 {
-  font-size:6em;
+  font-size:4em;
   margin: 0em;
+}
+
+@media only screen and (min-width: 35em) {
+  h3 {
+    font-size:2em;
+    margin: 0em;
+  }
+
+  h2 {
+    font-size:3em;
+    margin: 0em;
+  }
+
+  h1 {
+    font-size:6em;
+    margin: 0em;
+  }
 }
 
 section {
