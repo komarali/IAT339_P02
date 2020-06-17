@@ -105,12 +105,19 @@ div.nav-tools > a {
 }
 
 
-h3 {
+
+h4 {
   text-transform: uppercase;
   letter-spacing: .15em;
   font-size: 1em;
   margin: 0em;
 }
+
+h3 {
+  font-size:2em;
+  margin: 0em;
+}
+
 h2 {
   font-size:3em;
   margin: 0em;
