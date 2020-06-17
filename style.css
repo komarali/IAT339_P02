@@ -298,6 +298,8 @@ CODE FOR INTERACTIVE ELEMENT
 */
 /* links */
 
+
+
 .responsive-container, div.stickyTitle > *, div.stickyTitleNoFade > *{
   width:80vw;
   margin: 0em auto;
@@ -320,6 +322,11 @@ a {
 a:hover {
   color: #603DFC;
 }
+
+a.light-link {
+  color: white;
+}
+
 
 
 /* Primary and secondary buttons */
@@ -505,6 +512,16 @@ div.stickyTitle > h3, div.stickyTitleNoFade > h3 {
   list-style-type: none;
 }
 
+.footer-links-list {
+  margin-top: 0;
+  padding-left: 0em;
+  list-style-type: none;
+}
+
+.footer-links-list > li {
+  margin-bottom: 1rem;
+}
+
 #hero {
   height:100vh;
   width: 100%;
@@ -540,18 +557,6 @@ div.stickyTitle > h3, div.stickyTitleNoFade > h3 {
 
 #branding {
   padding-bottom: 6em;
-}
-#ending {
-  padding-top: 4em;
-  padding-bottom: 4em;
-}
-
-#ending > .responsive-container {
-  text-align: center;
-}
-
-#ending > .responsive-container > h3 {
-  padding-bottom: 2em;
 }
 
 img.full-width-image {
