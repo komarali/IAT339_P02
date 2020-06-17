@@ -66,6 +66,11 @@ Navigation
   
   */
 
+.nav-container {
+  margin: 1rem auto;
+  max-width: 80vw;
+}
+
 nav, nav.nav-container, .nav-main {
   display: flex;
   height: auto;
