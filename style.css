@@ -1,0 +1,691 @@
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  color:#FFF;
+  background-color: #603DFC;
+}
+
+/* use Din as the base font for every element on the webpage */
+* {
+  font-family: "din-2014", sans-serif;
+}
+
+body {
+  margin: 0em;
+  padding: 0em;
+  font-size: 16px;
+  color: #3E3E3E;
+}
+
+input, button {
+  font-size: 1rem;
+}
+
+header {
+  height: 40vh;
+}
+
+header > h1 {
+  margin-bottom: 4rem;
+}
+img {
+  max-width: 100%;
+}
+
+
+/* 
+  
+Navigation 
+  
+  */
+
+nav, nav.nav-container, .nav-main {
+  display: flex;
+  height: auto;
+  align-items: center;
+}
+
+nav > a, .nav-main > a {
+  display: inline-block;
+  margin-right: 1em;
+  font-size: 1.2em;
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+nav > a.active, .nav-main > a.active {
+  /* font-weight: bold; */
+  color: #603DFC;
+}
+
+a.logo > img {
+  height: 3rem;
+}
+
+div.nav-tools {
+  display: inline-block;
+  margin-left: auto;
+}
+
+div.nav-tools > a {
+  margin-left:1em;
+}
+
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: 1em;
+  margin: 0em;
+}
+h2 {
+  font-size:3em;
+  margin: 0em;
+}
+
+h1 {
+  font-size:6em;
+  margin: 0em;
+}
+
+section {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+
+.full-width {
+  width:100%;
+}
+
+/* layouts */
+
+/* container of layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+
+  /* 100 content width with gutter */
+  max-width: 104em;
+
+}
+
+/* for preview purpose */
+.layout--frame {
+  border: .1em dashed #FFF;
+  padding:1em;
+  border-radius: .25em;
+  height:10rem;
+}  
+
+.layout__col-s:last-child, 
+.layout__col-m:last-child,
+.layout__col-l:last-child,
+.layout__col-side-bar:last-child {
+  margin-right: 0em; 
+}
+
+/* single colum layout when screen is small */
+
+.layout__col-s, .layout__col-m, .layout__col-l, .layout__col-side-bar {
+  /* define the basic column width unit for the website */
+  
+  /* 330px -> 20.xxx em */
+  /* define the basic gutter size for the webist */
+  margin-bottom: 1em;
+}
+
+.layout__col-s:last-child, 
+.layout__col-m:last-child,
+.layout__col-l:last-child,
+.layout__col-side-bar:last-child {
+  /* only introduce the gutter for the middle row, not last one */
+  margin-right: 0em; 
+}
+
+/* hide the side bar when the window is too small */
+.layout__col-side-bar {
+  display: none;
+}
+
+/* expend layout when screen is bigger */
+@media only screen and (min-width: 60em) {
+
+  .layout {
+    display: flex;
+    flex-direction: row;
+  
+    /* 100 content width with gutter */
+    max-width: 104em;
+    
+  }
+
+  .layout__col-s, .layout__col-m, .layout__col-l, .layout__col-side-bar {
+    
+    /* 330px -> 20.xxx em */
+    /* define the basic gutter size for the webist */
+    margin-right: 1em;
+  }
+  
+  .layout__col-s:last-child, 
+  .layout__col-m:last-child,
+  .layout__col-l:last-child,
+  .layout__col-side-bar:last-child {
+    /* only introduce the gutter for the middle columns, not last one */
+    margin-right: 0em; 
+  }
+
+  .layout__col-s {
+    display: block;
+    flex-grow: 1; 
+
+    /* define the basic column width unit for the website */
+    flex-basis: 20em;
+  }
+  
+  .layout__col-m {
+    display: block;
+    flex-grow: 1;
+
+    /* notice that this is two times the size of layout  */
+    flex-basis: 40em;
+  }
+  
+  .layout__col-l {
+    display: block;
+    flex-grow: 1;
+    flex-basis: 60em;
+  }
+  
+  .layout__col-side-bar {
+    /* have a consistant sidebar size */
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: 20em;
+  }
+  
+  
+}
+
+
+/* 
+
+  product module
+
+  */
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  column-gap: 1em;
+  row-gap: 1em;
+  width: 100%;
+}
+
+a.product-item {
+  cursor: pointer;
+  
+  display: block;
+  position: relative;
+
+  transition-property: filter;
+  transition-duration: .1s;
+  transition-timing-function: ease-in;
+}
+a.product-item:hover {
+  filter: drop-shadow(0rem .5rem .3rem rgba(0,0,0,.2));
+}
+
+.product-item__info {
+  display: block;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  padding: 1em;
+}
+
+.product-item__info__catagory {
+  font-size: .8em;
+  text-transform: uppercase;
+
+}
+.product-item__info__title {
+  font-weight: bold;
+}
+
+.product-item__image {
+  width: 100%;
+  border-radius: .25rem;
+}
+
+/* 
+  hero module
+*/
+
+.hero-container {
+  color: #FFF;
+  background-image: url("img/keyboard-images/large_5593_large_DKME1961ST-USPDAAT1_5.jpg");
+  padding-top: 10vh;
+  min-height: 40vh;;
+}
+
+.hero-container > .responsive-container> h1 {
+  margin: 0;
+  max-width: 40rem;
+}
+
+.hero-container > .responsive-container > p {
+  margin: 0;
+}
+
+.hero-container > .responsive-container > #hero-cta {
+  margin-top: 2rem;
+}
+
+
+
+/* 
+
+CODE FOR INTERACTIVE ELEMENT
+
+*/
+/* links */
+
+.responsive-container, div.stickyTitle > *, div.stickyTitleNoFade > *{
+  width:80vw;
+  margin: 0em auto;
+  padding: 0em 0em;
+}
+
+.responsive-container {
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+a {
+  display: inline-block;
+  color: #3E3E3E;
+  transition: color;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:hover {
+  color: #603DFC;
+}
+
+
+/* Primary and secondary buttons */
+button {
+  border: none;
+}
+
+.button-primary, .button-secondary {
+  text-decoration: none;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: .75em;
+  padding-bottom: .75em;
+  
+  text-transform: uppercase;
+  letter-spacing: .1em;
+
+  border-radius: .25em;
+  transform: scale(1);
+
+  transition: transform, box-shadow;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.button-primary:active, .button-secondary:active {
+  transform: scale(.95);
+}
+
+.button-primary:hover, .button-secondary:hover {
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: #603DFC;
+  color: #FFF;
+  box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);
+}
+
+.button-primary:hover, .button-primary:focus{
+  /* css box shadow https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
+  /* drop shadow vs box shadow https://css-tricks.com/breaking-css-box-shadow-vs-drop-shadow/ */
+  background-color: #7a5cff;
+  color: #FFF;
+  box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);
+  outline: none;
+}
+
+.button-secondary, .button-secondary:active {
+  color: #603DFC;
+  background-color: rgba(0, 0, 0,.0);
+}
+
+
+.button-secondary:focus {
+  background-color: rgba(0, 0, 0,.05);
+  outline: none;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom:.5em;
+}
+
+input[type="text"] {
+  display: block;
+  padding:.75em;
+  border: .15em solid #3E3E3E;
+  border-radius: .25em;
+}
+
+input[type="text"]:focus {
+  border-color: #603DFC;
+  outline: none;
+}
+
+/*
+
+STICKLY LAYOUT
+
+*/
+
+div.stickyTitle, div.stickyTitleNoFade {
+  /* stitky title https://www.w3schools.com/howto/howto_css_sticky_element.asp */
+  position: sticky;
+  top: 0;
+  display: block;
+  margin-bottom: -2em;
+  
+  z-index: 100;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+div.stickyTitle > h2, div.stickyTitleNoFade > h2 {
+  margin-top:0em;
+  margin-bottom:0em;
+}
+div.stickyTitle > h3, div.stickyTitleNoFade > h3 {
+  margin-top:0em;
+  margin-bottom:0em;
+}
+
+.dark-section {
+  background-color: #3E3E3E;
+  color: #FFF;
+}
+
+.dark-section > div.stickyTitle {
+  background: rgb(62,62,62);
+  background: linear-gradient(0deg, rgba(62,62,62,0) 0%, rgba(62,62,62,1) 100%);
+  /* generated by https://cssgradient.io/ */
+
+  /* a hack to cover everything outside the title box */
+  /* box-shadow: 0em 50vw 0em 50vw rgb(62,62,62); */
+}
+
+.purple-section {
+  background-color: #603DFC;
+  color: #FFF;
+}
+
+.purple-section > div.stickyTitle {
+  background: rgb(96,61,252, .9);
+  /* background: linear-gradient(0deg, rgba(96,61,252,.2) 0%, rgba(96,61,252,1) 100%); */
+  /* generated by https://cssgradient.io/ */
+}
+
+.pink-section {
+  background-color: #EF476F;
+  color: #FFF;
+}
+
+.pink-section > div.stickyTitle {
+  background: rgb(239,71,111, .9);
+  /* background: linear-gradient(0deg, rgba(239,71,111,0) 0%, rgba(239,71,111,1) 100%); */
+  /* generated by https://cssgradient.io/ */
+}
+
+.light-section {
+  background-color: #FFF;
+  color: #3E3E3E;
+}
+
+.light-section > div.stickyTitle {
+  background: rgb(255,255,255, .9);
+  /* background: linear-gradient(0deg, rgba(232559,255,255,0) 0%, rgba(255,255,255,1) 100%); */
+  /* generated by https://cssgradient.io/ */
+}
+
+.fullscreen-container { 
+  width:100vw;
+  height:100vh;
+}
+
+.halfscreen-container {
+  height:100vh;
+}
+
+.brandingElements-container {
+  display:flex;
+}
+
+.brandingElements-item {
+  margin-right:1em;
+  min-width: 24%;
+}
+
+.brandingElements-item > ul {
+  padding-left: 0em;
+  list-style-type: none;
+}
+
+.brandingElements-item > ul {
+  padding-left: 0em;
+  list-style-type: none;
+}
+
+.hidden-list {
+  padding-left: 0em;
+  list-style-type: none;
+}
+
+#hero {
+  height:100vh;
+  width: 100%;
+  position: fixed;
+  top:0em;
+  z-index: -1;
+  background-color: #603DFC;
+  color: #FFF;
+}
+
+#hero > div > h1 {
+  font-size: 12em;
+  margin-top: 20vh;
+  margin-bottom:0em;
+  line-height: 1em;
+  z-index: 100;
+
+}
+#project-name {
+  float: left;
+}
+#student-info {
+  float: right;
+}
+
+#wireframe {
+  margin-top: 100vh;
+}
+
+#branding-logo {
+  padding-bottom:0em;
+}
+
+#branding {
+  padding-bottom: 6em;
+}
+#ending {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+#ending > .responsive-container {
+  text-align: center;
+}
+
+#ending > .responsive-container > h3 {
+  padding-bottom: 2em;
+}
+
+img.full-width-image {
+  width: 100%;
+}
+
+/* resets the preview element margin, so the nagative space between preview content and other elements is consistant */
+div.styleguide-preview >* {
+  margin: 0em;
+}
+div.styleguide-preview {
+  padding-top:1rem;
+  padding-bottom:1rem;
+
+  max-width: 104rem;
+}
+
+div.styleguide-code {
+  display: flex;
+}
+
+/* style for displaying code section */
+
+div.styleguide-code > code {
+  display: block;
+  flex: 1;
+}
+
+code {
+  font-family: Courier, monospace;
+  display: block;
+
+  background-color: #EEE;
+  color: #3E3E3E;
+
+  
+
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+
+  font-size: 1em;
+
+}
+
+code.dark-mode {
+  /* dark-mode */
+  background-color: #3E3E3E;
+  color: #FFF;
+}
+
+/* create a border between the html and css code preview */
+/* code:first-child {
+  margin-right: 1em;
+} */
+
+code.html::before, code.css::before {
+  display: block;
+  white-space: pre;
+  font-family: "din-2014", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .15em;
+  font-size: 1em;
+
+  margin-bottom: .5em;
+}
+
+code.html::before {
+  content:"html\A";
+}
+
+code.css::before {
+  content:"css\A";
+}
+
+
+.typogrpahyDisplay-bold {
+  font-weight: bold;
+  font-size:40vh;
+}
+
+.typogrpahyDisplay-normal {
+  font-weight: normal;
+  font-size:40vh;
+}
+
+.brandingColor-container {
+  display: flex;
+}
+.brandingColor-item {
+  width: 23%;
+}
+
+.colorPreview {
+  border-radius: 100%;
+  display: block;
+  width:4em;
+  height:4em;
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+  filter: drop-shadow(0em .4em .3em #EEE);
+
+  background-color: #FFF;
+}
+
+
+.logoDisplay {
+  display: block;
+
+  max-width: 50%;
+  height: auto;
+
+  margin: 0em auto;
+  padding: 5% 0em;
+}
+
+#colorPreview-Pink {
+  background-color:#EF476f;
+  filter: drop-shadow(0em .4em .3em rgb(243, 172, 189));
+}
+
+#colorPreview-Purple {
+  background-color:#603DFC;
+  filter: drop-shadow(0em .4em .3em rgb(181, 164, 255));
+}
+
+#colorPreview-DarkGrey {
+  background-color:#3E3E3E;
+  filter: drop-shadow(0em .4em .3em rgb(158, 158, 158));
+}
+
+#colorPreview-White {
+  background-color:#FFFFFF;
+  filter: drop-shadow(0em .4em .3em #EEE);
+}
