@@ -149,6 +149,35 @@ div.nav-tools > a {
   margin-left:1em;
 }
 
+/*
+Product Overview Navigation
+*/
+
+.product-overview-nav-container {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.leave-review {
+  margin: 2rem;
+  text-align: center;
+}
+
+.checked {
+  color: #603DFC;
+}
+
+.rating-scale {
+  margin-top: 0.6rem;
+}
+
+.product-review {
+  max-width: 35rem;
+  margin: auto;
+}
+
+
+
 
 
 h4 {
@@ -175,7 +204,7 @@ h1 {
 
 @media only screen and (min-width: 35em) {
   h3 {
-    font-size:2em;
+    font-size:.1.2em;
     margin: 0em;
   }
 
@@ -412,7 +441,15 @@ a.product-item:hover {
     border-radius: 50%;
   }
 
+/*
+Product Overview
+*/
 
+.product-overview__image {
+  height: 21.3rem;
+  width: auto;
+  border-radius: .25rem;
+}
 
 /* 
   hero module
