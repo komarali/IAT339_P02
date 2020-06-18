@@ -1136,3 +1136,52 @@ Payment Method Page
   width: 90%;
   margin: 0 auto;
 }
+
+
+/*
+Payment form Page
+*/
+
+
+.payment-form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-step-payment-form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.checkout-payment-form-module {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.completed-delivery-module {
+  margin-top: 3rem;
+}
+
+
+
+/*
+Review  Page
+*/
+
+.review-module {
+  margin-top: 2rem;
+}
+
+
+.checkout-step-review {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.checkout-review-module {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
