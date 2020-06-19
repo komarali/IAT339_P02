@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Step 2</title>
+  <link rel="stylesheet" href="https://use.typekit.net/fku8kit.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+ 
+  <section class="checkout-step-payment-form">
+    <div class="layout">
+      <div class="layout__col-m">
+        <!-- table code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding -->
+        <div class="checkout-payment-form-module"> 
+          <h2>Payment</h2>
+          <br>
+          <h3>Credit Card Information</h3>
+          <div class="payment-form">
+            <label for="name">Name On Card</label>
+            <input type="text" id="full-name" name="full_name" placeholder="Your name here">
+            <label for="name">Card Number</label>
+            <input type="text" id="card-number" name="card_number" placeholder="Card number here">
+            <label for="name">Expiry Date</label>
+            <input type="text" id="expiry" name="expiry_date" placeholder="MM/YY format">
+            <label for="name">CVV</label>
+            <input type="text" id="cvv" name="cvv_number" placeholder="3-digit number on the back of your card">
+          </div>
+            <div class="completed-delivery-module">
+              <h3>Deliver To</h3>
+              <ul class="hidden-list">
+                <li>michaelbuble@hotmail.com</li>
+                <li>Michael Buble</li>
+                <li>3453 Flower Street, Burnaby</li>
+              </ul>
+              <br>
+              <button type="reset" class="button-secondary" onclick="window.location.href='checkout_payment_method.html'">Back</button>
+              <button type="submit" class="button-primary" onclick="window.location.href='checkout_review.html'">Review Your Order</button>
+            </div>
+          </div> 
+        
+        </div>
+        <div class="layout__col-s">
+          <div class="cart-checkout-module">
+          <h3>Total</h3>
+          <h2>$338.00</h2>
+          <h4>Tax + Shipping included</h4>
+          <br>
+          <h3>Shipping</h3>
+          <p>Free regular shipping (5 business days)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>

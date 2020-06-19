@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome To Keytopia</title>
+  <link rel="stylesheet" href="https://use.typekit.net/fku8kit.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+  <nav class="nav-container">
+    <div class="nav-main">
+      <a class="logo" href="index.html">
+      <img src="img/logo-icon-only-grey.svg" alt="Logo" class="nav-logo">
+     </a>
+      <a class="active" href="browse_keyboards.html">Shop</a>
+      <a href="#">Building Guide</a>
+      <a href="#">About</a>
+    </div>
+    <div class="nav-tools">
+      <a href="#">
+        <img src="img/icons/account-circle-line.svg" alt="Login to account">
+      </a>
+      <a href="#">
+        <img src="img/icons/shopping-cart-line.svg" alt="Shopping Cart">
+      </a>
+    </div>
+  </nav>
+
+ 
+
+  <section class="cart">
+    <section class="page-header-module">
+      <h2>My Cart</h2>
+    </section>
+    <div class="layout">
+      <div class="layout__col-m">
+        <!-- table code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding -->
+        <div class="cart-table"> 
+          <table>
+              <tr>
+                <th>ITEM</th>
+                <th>QUANTITY</th>
+                <th>PRICE</th>
+              </tr>
+              <tr>
+                <td>Product Name</td>
+                <td>1</td>
+                <td>$156</td>
+              </tr>
+              <tr>
+                <td>Product Name</td>
+                <td>1</td>
+                <td>$156</td>
+              </tr>
+              <tr>
+                <td></td>
+                <th>TOTAL</th>
+                <td>$338</td>
+              </tr>
+            </table>
+          </div> 
+        </div>
+        <div class="layout__col-s">
+          <div class="cart-checkout-module">
+          <h3>Total</h3>
+          <h2>$338.00</h2>
+          <h4>Tax + Shipping</h4>
+          <br>
+          <h3>Shipping</h3>
+            <div class="radio-delivery">
+              <input type="radio" id="radioRegular" name="radioFruit" value="regular">
+              <label for="radioRegular">Regular (Free)</label>
+              <input type="radio" id="radioExpress" name="radioFruit" value="express">
+              <label for="radioExpress">Express (+$20)</label>
+          </div>
+          <button type="submit" class="button-primary" onclick="window.location.href='checkout_address.html'">Check Out</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="full-width purple-section">
+    <div class="responsive-container">
+      <div class="layout">
+        <div class="layout__col-s">
+          <div> 
+            3897  North Street <br>
+            Salt Lake City <br>
+            UT, Utah <br>
+            84104 <br>
+          </div>
+          <div>
+            Keytopia © 2012 - 2020
+          </div>
+        </div>
+        <div class="layout__col-s">
+          <ul class="footer-links-list">    
+            <li>
+              <a href="#" class="light-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="light-link">Shop</a>
+            </li>
+            <li>
+              <a href="#" class="light-link">Guide</a>
+            </li>
+          </ul>  
+        </div>
+        <div class="layout__col-s">  
+          <ul class="footer-links-list"> 
+            <li>
+              <a href="#" class="light-link">Track Your Order</a>
+            </li>
+            <li>
+              <a href="#" class="light-link">FAQ</a>
+            </li>
+          </ul>   
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

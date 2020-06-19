@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Step 2</title>
+  <link rel="stylesheet" href="https://use.typekit.net/fku8kit.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- for some reason here the radio buttons dont work as supposed to, can u check pls -->
+  <section class="checkout-step-payment">
+    <div class="layout">
+      <div class="layout__col-m">
+        <div class="checkout-payment-module"> 
+            <h2>Payment</h2>
+            <br>
+            <h3>Select Payment Method</h3>
+            <div class="radio-payment">
+              <input type="radio" id="radioCredit" name="radioCr" value="credit">
+              <label for="radioCredit">Credit Card</label>
+              <input type="radio" id="radioDebit" name="radioDeb" value="debit">
+              <label for="radioDebit">Debit Card</label>
+              <input type="radio" id="radioPaypal" name="Pay" value="paypal">
+              <label for="radioPaypal">Paypal</label>
+            </div>
+            <button type="reset" class="button-secondary" onclick="window.location.href='checkout_address.html'">Back</button>
+            <button type="submit" class="button-primary" onclick="window.location.href='checkout_payment.html'">Next</button>
+          </div> 
+        </div>
+        <div class="layout__col-s">
+          <div class="cart-checkout-module">
+          <h3>Total</h3>
+          <h2>$338.00</h2>
+          <h4>Tax + Shipping included</h4>
+          <br>
+          <h3>Shipping</h3>
+          <p>Free regular shipping (5 business days)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
