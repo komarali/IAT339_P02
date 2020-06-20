@@ -115,21 +115,31 @@ nav.nav-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
   /* position: absolute; */
+  background-color:#000;
 }
 
-nav.nav-container, .nav-main {
+nav.nav-container>div.responsive-container, .nav-main {
+  padding:0rem;
   display: flex;
   height: auto;
   align-items: center;
 }
 
+.nav-main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .nav-main > a {
-  display: inline-block;
+  display: none;
+
+  /* display: inline-block; */
   margin-right: 1em;
   font-size: 1.2em;
   text-decoration: none;
 
-  font-weight: bold;
+  font-weight: normal;
+  color:#FFF;
 }
 
 nav > a.active, .nav-main > a.active {
@@ -141,6 +151,18 @@ a.logo > img {
   height: 3rem;
 }
 
+a.logo {
+  transform: scale(1);
+  
+  transition-property: transform;
+  transition-duration: .1s;
+  transition-timing-function: ease;
+}
+
+a.logo:active {
+  transform: scale(.9);
+}
+
 div.nav-tools {
   display: inline-block;
   margin-left: auto;
@@ -148,6 +170,17 @@ div.nav-tools {
 
 div.nav-tools > a {
   margin-left:1em;
+}
+
+div.nav-tools > a > img {
+  width:1.5rem;
+  height:1.5rem;
+}
+
+@media only screen and (min-width: 480px) {
+  .nav-main > a {
+    display: block;
+  } 
 }
 
 /*
@@ -302,7 +335,6 @@ ul, ol {
   
     /* 100 content width with gutter */
     max-width: 104em;
-    
   }
 
   .layout__col-s, .layout__col-m, .layout__col-l, .layout__col-side-bar {
