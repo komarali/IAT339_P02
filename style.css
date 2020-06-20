@@ -220,8 +220,8 @@ h1 {
 }
 
 section {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  /* padding-top: 2em; */
+  /* padding-bottom: 2em; */
 }
 
 ul, ol {
@@ -459,6 +459,7 @@ Product Overview
   color: #FFF;
   background-image: url("img/large_5593_large_DKME1961ST-USPDAAT1_5.jpg");
   padding-top: 10vh;
+  padding-bottom: 2em;
   min-height: 40vh;;
 }
 
