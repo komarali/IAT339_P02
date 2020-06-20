@@ -1,0 +1,18 @@
+{
+    "host": "ftp.sfu.ca",
+    "username": "kkl64",
+    "password": "*",
+    "remotePath": "pub_html/IAT339/Project2",
+    "protocol": "ftp",
+    "port": 0,
+    "fileNameEncoding": "utf8",
+    "autoUpload": false,
+    "autoDelete": false,
+    "autoDownload": false,
+    "ignore": [
+        ".git",
+        "/.vscode",
+        "/P01",
+        "/P01_alvin"
+    ]
+}
