@@ -506,9 +506,9 @@ Product Overview
 .hero-container {
   color: #FFF;
   background-image: url("img/large_5593_large_DKME1961ST-USPDAAT1_5.jpg");
-  padding-top: 10vh;
-  padding-bottom: 2em;
-  min-height: 40vh;;
+  padding-top: 15vh;
+  padding-bottom: 8vh;
+  min-height: 40vh;
 }
 
 .hero-container > .responsive-container> h1 {
@@ -663,8 +663,8 @@ button {
   border-radius: .25em;
   transform: scale(1);
 
-  transition: transform, box-shadow;
-  transition-duration: .3s;
+  transition: transform, box-shadow background-color border;
+  transition-duration: .2s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -686,6 +686,7 @@ button {
   /* css box shadow https://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
   /* drop shadow vs box shadow https://css-tricks.com/breaking-css-box-shadow-vs-drop-shadow/ */
   background-color: #7a5cff;
+  border-color: #7a5cff;;
   color: #FFF;
   box-shadow: 0 .2em .4em rgba(54, 54, 54,.5);
   outline: none;
