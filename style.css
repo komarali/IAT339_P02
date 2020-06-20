@@ -111,18 +111,19 @@ Navigation
   
   */
 
-.nav-container {
-  margin: 1rem auto;
-  max-width: 80vw;
+nav.nav-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* position: absolute; */
 }
 
-nav, nav.nav-container, .nav-main {
+nav.nav-container, .nav-main {
   display: flex;
   height: auto;
   align-items: center;
 }
 
-nav > a, .nav-main > a {
+.nav-main > a {
   display: inline-block;
   margin-right: 1em;
   font-size: 1.2em;
@@ -283,6 +284,15 @@ ul, ol {
   display: none;
 }
 
+/* for center floating elements */
+.responsive-container{
+  margin:0rem 1rem;
+
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
 /* expend layout when screen is bigger */
 @media only screen and (min-width: 60em) {
 
@@ -340,7 +350,13 @@ ul, ol {
     flex-basis: 20em;
   }
   
-  
+}
+
+@media only screen and (min-width: 1280px) {
+  .responsive-container {
+    max-width: 1200px;
+    margin: 0em auto;
+  }
 }
 
 
@@ -578,19 +594,6 @@ CODE FOR INTERACTIVE ELEMENT
 
 */
 /* links */
-
-
-
-.responsive-container, div.stickyTitle > *, div.stickyTitleNoFade > *{
-  width:80vw;
-  margin: 0em auto;
-  padding: 0em 0em;
-}
-
-.responsive-container {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
 
 a {
   display: inline-block;
