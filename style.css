@@ -68,7 +68,7 @@ Page Header Module with Breadcrumbs
 
   .page-header-module {
     margin: 1rem auto;
-    margin-left: 1rem;
+    margin-left: 0rem;
     max-width: 80vw;
     display: block;
     height: auto;
@@ -1229,3 +1229,18 @@ Review  Page
   margin-left: 1rem;
 }
 
+/*
+ Product page
+ */
+.product-module {
+  margin-top:2rem;
+}
+
+.product-detials > .button-primary {
+  width:100%
+}
+
+.product-gallery > img {
+  width:100%;
+  height:auto;
+}
