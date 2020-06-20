@@ -187,10 +187,6 @@ div.nav-tools > a > img {
 Product Overview Navigation
 */
 
-.product-overview-nav-container {
-  justify-content: center;
-  margin-bottom: 2rem;
-}
 
 .leave-review {
   margin: 2rem;
@@ -1235,12 +1231,47 @@ Review  Page
 .product-module {
   margin-top:2rem;
 }
-
+.product-detials {
+  display: flex;
+  flex-direction: column;
+}
 .product-detials > .button-primary {
-  width:100%
+  /* max-width: 40rem; */
 }
 
 .product-gallery > img {
   width:100%;
   height:auto;
+}
+.product-tab-navigation-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+/*
+ tab navigation module
+ */
+.tab-navigation {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.tab-navigation > a {
+  font-size: 1rem;
+  margin: 0em;
+  text-decoration: none;
+  margin: 0rem;
+  padding:.5rem 1rem;
+  color:#603DFC;
+
+  text-transform: uppercase;
+
+}
+
+
+.tab-navigation > .active {
+  border-radius: .25rem;
+  font-weight: bold;
 }
