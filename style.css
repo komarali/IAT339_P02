@@ -215,21 +215,32 @@ h4 {
   letter-spacing: .15em;
   font-size: 1em;
   margin: 0em;
+
+  margin-bottom: 1rem;
 }
 
 h3 {
   font-size:1.2em;
   margin: 0em;
+
+  margin-bottom: 1rem;
 }
 
 h2 {
   font-size:2em;
   margin: 0em;
+  margin-bottom: 1rem;
 }
 
 h1 {
   font-size:4em;
   margin: 0em;
+
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 /* @media only screen and (min-width: 35em) {
@@ -1107,8 +1118,8 @@ Address Form Page
 }
 
 .checkout-step-address {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 
 
@@ -1116,7 +1127,6 @@ Address Form Page
   margin-right: 1rem;
   margin-left: 1rem;
 }
-
 
 /*
 Payment Method Page
@@ -1281,3 +1291,14 @@ Review  Page
 Styles for check out sections
 
 */
+
+.checkout-form-container {
+  padding: 4rem 4rem;
+  /* border: .1rem solid #000; */
+  border-radius: .25rem;
+  box-shadow: 0rem .25rem .5rem rgba(0,0,0,.1);
+}
+
+.step-indicator {
+  
+}
