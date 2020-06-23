@@ -10,12 +10,22 @@
 </head>
 
 <body>
+  
+  <section class="step-indicator-module responsive-container">
+    <h1>Check out</h1>
+    <div class="step-indicator">
+      <a href="checkout_address.html" class="step-indicator__step">Delivery</a>
+      <a href="#" class="step-indicator__step step-indicator__step--active">Payment</a>
+      <a href="#" class="step-indicator__step step-indicator__step--inactive">Review</a>
+    </div>
+    <div class="step-indicator-text">Step 2 out of 3</div>
+  </section>
  
-  <section class="checkout-step-payment-form">
+  <section class="responsive-container">
     <div class="layout">
       <div class="layout__col-m">
         <!-- table code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding -->
-        <div class="checkout-payment-form-module"> 
+        <div class="checkout-payment-form-module checkout-form-container"> 
           <h2>Payment</h2>
           <br>
           <h3>Credit Card Information</h3>
@@ -24,11 +34,17 @@
             <input type="text" id="full-name" name="full_name" placeholder="Your name here">
             <label for="name">Card Number</label>
             <input type="text" id="card-number" name="card_number" placeholder="Card number here">
-            <label for="name">Expiry Date</label>
-            <input type="text" id="expiry" name="expiry_date" placeholder="MM/YY format">
-            <label for="name">CVV</label>
-            <input type="text" id="cvv" name="cvv_number" placeholder="3-digit number on the back of your card">
-          </div>
+            <div class="layout">
+              <div class="layout__col-s layout--no-margin-bottom">
+                <label for="name">Expiry Date</label>
+                <input type="text" id="expiry" name="expiry_date" placeholder="MM/YY format">
+              </div>
+              <div class="layout__col-s layout--no-margin-bottom">
+                <label for="name">CVV</label>
+                <input type="text" id="cvv" name="cvv_number" placeholder="3-digit number on the back of your card">
+              </div>
+            </div>
+
             <div class="completed-delivery-module">
               <h3>Deliver To</h3>
               <ul class="hidden-list">
@@ -40,18 +56,17 @@
               <button type="reset" class="button-secondary" onclick="window.location.href='checkout_payment_method.html'">Back</button>
               <button type="submit" class="button-primary" onclick="window.location.href='checkout_review.html'">Review Your Order</button>
             </div>
-          </div> 
-        
+          </div>
         </div>
-        <div class="layout__col-s">
-          <div class="cart-checkout-module">
-          <h3>Total</h3>
-          <h2>$338.00</h2>
-          <h4>Tax + Shipping included</h4>
-          <br>
-          <h3>Shipping</h3>
-          <p>Free regular shipping (5 business days)</p>
-        </div>
+      </div>
+      <div class="layout__col-s">
+        <div class="cart-checkout-module">
+        <h3>Total</h3>
+        <h2>$338.00</h2>
+        <h4>Tax + Shipping included</h4>
+        <br>
+        <h3>Shipping</h3>
+        <p>Free regular shipping (5 business days)</p>
       </div>
     </div>
   </section>

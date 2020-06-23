@@ -1185,13 +1185,13 @@ Payment Method Page
 
 
 .checkout-payment-module {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  /* margin-right: 1rem;
+  margin-left: 1rem; */
 }
 
 .checkout-step-payment {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 
 
@@ -1201,19 +1201,19 @@ Payment form Page
 
 
 .payment-form {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
 }
 
 .checkout-step-payment-form {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 
 
 .checkout-payment-form-module {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  /* margin-right: 1rem;
+  margin-left: 1rem; */
 }
 
 .completed-delivery-module {
@@ -1227,19 +1227,19 @@ Review  Page
 */
 
 .review-module {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
 }
 
 
 .checkout-step-review {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 
 
 .checkout-review-module {
-  margin-right: 1rem;
-  margin-left: 1rem;
+  /* margin-right: 1rem;
+  margin-left: 1rem; */
 }
 
 /*
@@ -1303,7 +1303,7 @@ Styles for check out sections
   padding: 4rem 4rem;
   /* border: .1rem solid #000; */
   border-radius: .25rem;
-  box-shadow: 0rem .25rem .5rem rgba(0,0,0,.1);
+  box-shadow: 0rem .25rem .5rem rgba(0,0,0,.15);
 }
 
 .step-indicator {
@@ -1340,4 +1340,9 @@ a.step-indicator__step {
 a.step-indicator__step--active {
   background-color: #444;
   color: #FFF;
+}
+
+a.step-indicator__step--inactive {
+  background-color: #eee;
+  color: #CCC;
 }
