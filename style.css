@@ -1371,3 +1371,28 @@ REVIEW SECTION MODULES
     border-color: #603DFC;
     color: #603DFC;
 }
+
+textarea {
+  width: 90%;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.25rem;
+  border: .15em solid #3E3E3E;
+  color: gray;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #603DFC;
+  outline: none;
+}
+
+.confirmation-tick {
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-tick-image {
+  width: 50%;
+  margin: 1rem 0;
+}
