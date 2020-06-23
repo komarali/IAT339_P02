@@ -286,6 +286,11 @@ ul, ol {
 
 }
 
+.layout--no-margin-bottom{
+  margin-bottom: 0rem !important;
+}
+
+
 /* for preview purpose */
 .layout--frame {
   border: .1em dashed #FFF;
@@ -726,9 +731,11 @@ label {
 
 input[type="text"] {
   display: block;
+  box-sizing: border-box;
   padding:.75em;
   border: .15em solid #3E3E3E;
-  width: 20rem;
+  /* min-width: 10rem; */
+  width: 100%;
   border-radius: .25em;
   margin-bottom: 1.2rem;
 }
@@ -1300,5 +1307,37 @@ Styles for check out sections
 }
 
 .step-indicator {
-  
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: stretch;
+  align-content: stretch; */
+  padding: 1rem 0rem;
+}
+
+.step-indicator__step:first-child {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.step-indicator__step:last-child {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+a.step-indicator__step {
+  display: block;
+  flex-basis: 1;
+  width: 100%;
+  padding: 1rem 1rem;
+  background-color: #eee;
+  text-align: center;
+  text-decoration: none;
+  transition-property: background-color;
+}
+
+a.step-indicator__step--active {
+  background-color: #444;
+  color: #FFF;
 }
