@@ -232,22 +232,22 @@ h1 {
   margin: 0em;
 }
 
-@media only screen and (min-width: 35em) {
+/* @media only screen and (min-width: 35em) {
   h3 {
     font-size:.1.2em;
     margin: 0em;
   }
 
   h2 {
-    font-size:3em;
+    font-size:2em;
     margin: 0em;
   }
 
   h1 {
-    font-size:6em;
+    font-size:4em;
     margin: 0em;
   }
-}
+} */
 
 section {
   /* padding-top: 2em; */
@@ -1025,13 +1025,13 @@ Cart
 */
 
 .cart {
-  width: 90%;
-  margin: 0 auto;
+  /* width: 90%;
+  margin: 0 auto; */
 }
 
 .cart-table {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
 }
 
 table, td, th {  
@@ -1275,3 +1275,9 @@ Review  Page
   border-radius: .25rem;
   font-weight: bold;
 }
+
+/*
+
+Styles for check out sections
+
+*/
