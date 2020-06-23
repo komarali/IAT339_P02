@@ -199,6 +199,7 @@ Product Overview Navigation
 
 .rating-scale {
   margin-top: 0.6rem;
+  font-weight: bold;
 }
 
 .product-review {
@@ -260,10 +261,7 @@ p {
   }
 } */
 
-section {
-  /* padding-top: 2em; */
-  /* padding-bottom: 2em; */
-}
+
 
 ul, ol {
   padding-left: 2em;
@@ -553,11 +551,7 @@ Product Overview
 Code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_custom_checkbox
 */
 
-.product-filtering-sidebar {
-  /* padding-left: 0rem;
-  padding-right: 1rem; */
-  /* padding-top: 1rem; */
-}
+
 
 .single-filter-component {
   margin-bottom: 2rem;
@@ -1042,10 +1036,7 @@ code.css::before {
 Cart 
 */
 
-.cart {
-  /* width: 90%;
-  margin: 0 auto; */
-}
+
 
 .cart-table {
   margin-left: 0rem;
@@ -1124,10 +1115,7 @@ Address Form Page
   margin-bottom: 1rem;
 }
 
-.checkout-step-address {
-  /* width: 90%;
-  margin: 0 auto; */
-}
+
 
 
 .checkout-adress-module {
@@ -1184,37 +1172,13 @@ Payment Method Page
 }
 
 
-.checkout-payment-module {
-  /* margin-right: 1rem;
-  margin-left: 1rem; */
-}
-
-.checkout-step-payment {
-  /* width: 90%;
-  margin: 0 auto; */
-}
-
 
 /*
 Payment form Page
 */
 
 
-.payment-form {
-  /* margin-top: 1rem;
-  margin-bottom: 1rem; */
-}
 
-.checkout-step-payment-form {
-  /* width: 90%;
-  margin: 0 auto; */
-}
-
-
-.checkout-payment-form-module {
-  /* margin-right: 1rem;
-  margin-left: 1rem; */
-}
 
 .completed-delivery-module {
   margin-top: 3rem;
@@ -1226,21 +1190,8 @@ Payment form Page
 Review  Page
 */
 
-.review-module {
-  /* margin-top: 2rem; */
-}
 
 
-.checkout-step-review {
-  /* width: 90%;
-  margin: 0 auto; */
-}
-
-
-.checkout-review-module {
-  /* margin-right: 1rem;
-  margin-left: 1rem; */
-}
 
 /*
  Product page
@@ -1252,9 +1203,7 @@ Review  Page
   display: flex;
   flex-direction: column;
 }
-.product-detials > .button-primary {
-  /* max-width: 40rem; */
-}
+
 
 .product-gallery > img {
   width:100%;
@@ -1345,4 +1294,80 @@ a.step-indicator__step--active {
 a.step-indicator__step--inactive {
   background-color: #eee;
   color: #CCC;
+}
+  
+
+
+
+
+
+/*
+REVIEW SECTION MODULES
+*/
+
+.upload_image {
+  background-color: lightgray;
+  color: #3E3E3E;
+  max-width: 100%;
+  padding: 4rem 1rem 4rem 1rem;
+  text-align: center;
+}
+
+.review-checkbox-area {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.button-area-review {
+  float: right;
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.review-module {
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+.radio-review{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.radio-review input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-review label {
+    display: inline-block;
+    background-color: white;
+    width: 48%;
+    height: 1.5rem;
+    text-align: center;
+    padding-top: .75em;
+    padding-bottom: .75em;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    border-radius: .25em;
+    border: 2px solid #444;
+    border-radius: 0.25rem;
+}
+
+.radio-review label:hover {
+  background-color: #603dfc38;
+}
+
+.radio-review input[type="radio"]:focus + label {
+    border: 2px solid #603dfc38;
+}
+
+.radio-review input[type="radio"]:checked + label {
+    background-color: #603dfc38;
+    border-color: #603DFC;
+    color: #603DFC;
 }
