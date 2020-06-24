@@ -18,6 +18,10 @@ body {
   color: #3E3E3E;
 }
 
+body.scroll-lock {
+  overflow: hidden;
+}
+
 input, button {
   font-size: 1rem;
 }
@@ -1418,6 +1422,7 @@ textarea:focus {
   width:100%;
   z-index: 1000;
   background-color:rgba(0, 0, 0,.5);
+  overflow-y: scroll;
 }
 
 .modal-box-wrapper {
@@ -1426,6 +1431,7 @@ textarea:focus {
 
 .modal-box {
   margin-top:10vh;
+  margin-bottom:10vh;
   padding: 2.5rem;
   border-radius: .5rem;
   box-shadow: 0 .2em 1em rgba(54, 54, 54, .5);
