@@ -1203,12 +1203,16 @@ Review  Page
   display: flex;
   flex-direction: column;
 }
-
+/* make the button stick to the bottom of the container */
+.product-detials > button {
+  margin-top: auto;
+}
 
 .product-gallery > img {
   width:100%;
   height:auto;
 }
+
 .product-tab-navigation-container {
   display: flex;
   justify-content: center;
@@ -1445,7 +1449,7 @@ textarea:focus {
   justify-items: center;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 .banner-content > p {
   display: block;
