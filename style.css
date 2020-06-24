@@ -1442,14 +1442,19 @@ textarea:focus {
   position: relative;
   padding-top:.5rem;
   padding-bottom: .5rem;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.banner-content > p {
+  display: block;
+  margin-right: 2rem;
 }
 
 .banner-content > a {
-  position: absolute;
-  right: 0rem;
-  margin-top: .5rem;
+  display: block;
   text-decoration: none;
-  padding: .5rem 1rem;
   background-color: #7a5cff;
   border-radius: .25rem;
 }
