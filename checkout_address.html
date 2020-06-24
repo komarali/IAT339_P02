@@ -11,57 +11,63 @@
 
 <body>
 
-<section class="step-indicator-module responsive-container">
-  <h1>Check out</h1>
-  <div class="step-indicator">
-    <a href="checkout_address.html" class="step-indicator__step step-indicator__step--active">Delivery</a>
-    <a href="checkout_payment.html" class="step-indicator__step step-indicator__step--inactive">Payment</a>
-    <a href="#" class="step-indicator__step step-indicator__step--inactive">Review</a>
-  </div>
-  <div class="step-indicator-text">Step 2 out of 3</div>
-</section>
+  <section class="banner-module">
+    <div class="responsive-container banner-content">
+      <p>Already have an account? Sign in for faster checkout.</p>
+      <a href="#" class="button-primary">Sign in</a>
+    </div>
+  </section>
 
-<section class="checkout-step-address responsive-container">
-  <div class="layout">
-    <div class="layout__col-m">
-      <!-- table code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding -->
-      <div class="checkout-form-container"> 
-        <h2>Deliver To</h2>
-        <!-- <h3>Dilivery Address</h3> -->
-        <div class="address-form">
-          <label for="name">E-mail Address</label>
-          <input type="text" id="address" name="email_address" placeholder="myemail@mail.ca">
-          <div class="layout">
-            <div class="layout__col-s layout--no-margin-bottom">
-              <label for="name">First Name</label>
-              <input type="text" id="firstname" name="first_name" placeholder="First Name">
+  <section class="step-indicator-module responsive-container">
+    <h1>Check out</h1>
+    <div class="step-indicator">
+      <a href="checkout_address.html" class="step-indicator__step step-indicator__step--active">Delivery</a>
+      <a href="checkout_payment.html" class="step-indicator__step step-indicator__step--inactive">Payment</a>
+      <a href="#" class="step-indicator__step step-indicator__step--inactive">Review</a>
+    </div>
+    <div class="step-indicator-text">Step 2 out of 3</div>
+  </section>
+
+  <section class="checkout-step-address responsive-container">
+    <div class="layout">
+      <div class="layout__col-m">
+        <!-- table code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding -->
+        <div class="checkout-form-container"> 
+          <h2>Deliver To</h2>
+          <!-- <h3>Dilivery Address</h3> -->
+          <div class="address-form">
+            <label for="name">E-mail Address</label>
+            <input type="text" id="address" name="email_address" placeholder="myemail@mail.ca">
+            <div class="layout">
+              <div class="layout__col-s layout--no-margin-bottom">
+                <label for="name">First Name</label>
+                <input type="text" id="firstname" name="first_name" placeholder="First Name">
+              </div>
+              <div class="layout__col-s layout--no-margin-bottom">
+                <label for="name">Last Name</label>
+                <input type="text" id="lastname" name="last_name" placeholder="Last Name">
+              </div>
             </div>
-            <div class="layout__col-s layout--no-margin-bottom">
-              <label for="name">Last Name</label>
-              <input type="text" id="lastname" name="last_name" placeholder="Last Name">
-            </div>
+            <label for="name">Street Name</label>
+            <input type="text" id="streetname" name="street_name" placeholder="Street Name">
+            <label for="name">City</label>
+            <input type="text" id="city" name="city_name" placeholder="City">
+            <button type="submit" class="button-primary" onclick="window.location.href='checkout_payment_method.html'">Next</button>
           </div>
-          <label for="name">Street Name</label>
-          <input type="text" id="streetname" name="street_name" placeholder="Street Name">
-          <label for="name">City</label>
-          <input type="text" id="city" name="city_name" placeholder="City">
-          <button type="submit" class="button-primary" onclick="window.location.href='checkout_payment_method.html'">Next</button>
+          </div> 
         </div>
-        </div> 
-      </div>
-      <div class="layout__col-s">
-        <div class="cart-checkout-module">
-        <h3>Total</h3>
-        <h2>$338.00</h2>
-        <h4>Tax + Shipping included</h4>
-        <br>
-        <h3>Shipping</h3>
-        <p>Free regular shipping (5 business days)</p>
+        <div class="layout__col-s">
+          <div class="cart-checkout-module">
+          <h3>Total</h3>
+          <h2>$338.00</h2>
+          <h4>Tax + Shipping included</h4>
+          <br>
+          <h3>Shipping</h3>
+          <p>Free regular shipping (5 business days)</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
 </body>
 </html>

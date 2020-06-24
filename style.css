@@ -1427,3 +1427,29 @@ textarea:focus {
   box-shadow: 0 .2em 1em rgba(54, 54, 54, .5);
   background-color: #FFF;
 }
+
+/*
+  banner module
+*/
+.banner-module {
+  width: 100%;
+  background-color: #603DFC;
+  color: #FFF;
+}
+
+.banner-content {
+  display: flex;
+  position: relative;
+  padding-top:.5rem;
+  padding-bottom: .5rem;
+}
+
+.banner-content > a {
+  position: absolute;
+  right: 0rem;
+  margin-top: .5rem;
+  text-decoration: none;
+  padding: .5rem 1rem;
+  background-color: #7a5cff;
+  border-radius: .25rem;
+}
