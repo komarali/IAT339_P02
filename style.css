@@ -1319,7 +1319,6 @@ REVIEW SECTION MODULES
 }
 
 .button-area-review {
-  float: right;
   margin-top: 2rem;
   text-align: right;
 }
@@ -1395,4 +1394,36 @@ textarea:focus {
 .confirmation-tick-image {
   width: 50%;
   margin: 1rem 0;
+}
+
+/*
+ 
+  For modal modules
+
+  referenced tutorial 
+  https://stackoverflow.com/questions/42828949/how-to-center-a-absolute-div-inside-a-fixed-div/42829168
+
+ */
+
+.modal-box-container {
+  position: fixed;
+  right: 0rem;
+  left: 0rem;
+  top: 0rem;
+  bottom: 0rem;
+  width:100%;
+  z-index: 1000;
+  background-color:rgba(0, 0, 0,.5);
+}
+
+.modal-box-wrapper {
+  position: relative;
+}
+
+.modal-box {
+  margin-top:10vh;
+  padding: 2.5rem;
+  border-radius: .5rem;
+  box-shadow: 0 .2em 1em rgba(54, 54, 54, .5);
+  background-color: #FFF;
 }
