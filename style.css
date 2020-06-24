@@ -1462,3 +1462,50 @@ textarea:focus {
   background-color: #7a5cff;
   border-radius: .25rem;
 }
+
+
+/*
+Login Details
+*/
+
+.login_button_secondary {
+margin-top: 1rem;
+margin-bottom: 1rem;
+
+}
+
+
+.login-module {
+  margin: 0 auto;
+  max-width: 25rem;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+
+}
+
+hr {
+  border-top: 1px solid grey;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+/*
+About Us
+*/
+.about-us-image {
+  width: 100%;  
+  border-radius: .25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-us {
+  max-width: 50%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}

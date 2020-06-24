@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Cart</title>
+  <title>Welcome To Keytopia</title>
   <link rel="stylesheet" href="https://use.typekit.net/fku8kit.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
 
   <nav class="nav-container">
     <div class="responsive-container">
@@ -20,7 +21,7 @@
         <a href="browse_keyboards.html">Keyboards</a>
         <a href="browse_keyboards.html">Parts</a>
         <a href="browse_keyboards.html">Accessories</a>
-        <a href="about_us.html">About Us</a>
+        <a class="active" href="about_us.html">About Us</a>
       </div>
       <div class="nav-tools">
         <a href="login.html">
@@ -33,58 +34,13 @@
     </div>
   </nav>
 
- 
-  <section class="page-header-module responsive-container">
-    <h1>My Cart</h1>
-  </section>
+  <section class="about-us">
+  <img class="about-us-image" src="img/large_5027_large_DKON1861ST-USPDWWT1_2.jpg" alt="keyboard">
+  <h2>About Us</h2>
+  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+  </section>  
 
-  <section class="cart responsive-container">
-    <div class="layout">
-      <div class="layout__col-m">
-        <!-- table code adapted from https://www.w3schools.com/css/tryit.asp?filename=trycss_table_padding -->
-        <div class="cart-table"> 
-          <table>
-              <tr>
-                <th>ITEM</th>
-                <th>QUANTITY</th>
-                <th>PRICE</th>
-              </tr>
-              <tr>
-                <td>Product Name</td>
-                <td>1</td>
-                <td>$156</td>
-              </tr>
-              <tr>
-                <td>Product Name</td>
-                <td>1</td>
-                <td>$156</td>
-              </tr>
-              <tr>
-                <td></td>
-                <th>TOTAL</th>
-                <td>$338</td>
-              </tr>
-            </table>
-          </div> 
-        </div>
-        <div class="layout__col-s">
-          <div class="cart-checkout-module">
-          <h3>Total</h3>
-          <h2>$338.00</h2>
-          <h4>Tax + Shipping</h4>
-          <br>
-          <h3>Shipping</h3>
-            <div class="radio-delivery">
-              <input type="radio" id="radioRegular" name="radioFruit" value="regular">
-              <label for="radioRegular">Regular (Free)</label>
-              <input type="radio" id="radioExpress" name="radioFruit" value="express">
-              <label for="radioExpress">Express (+$20)</label>
-          </div>
-          <button type="submit" class="button-primary" onclick="window.location.href='checkout_address.html'">Check Out</button>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
   <footer class="full-width purple-section">
     <div class="responsive-container">
