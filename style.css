@@ -681,7 +681,7 @@ button {
   border-radius: .25em;
   transform: scale(1);
 
-  transition-property: transform, box-shadow background-color border;
+  transition-property: transform, box-shadow, background-color, border;
   transition-duration: .2s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
