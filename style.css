@@ -100,7 +100,7 @@ Page Header Module with Breadcrumbs
   ul.breadcrumb li a:hover {
     color: #603DFC;
     text-decoration: underline;
-    transition: color;
+    transition-property: color;
     transition-duration: .3s;
     transition-timing-function: ease-in;
   }
@@ -648,7 +648,7 @@ CODE FOR INTERACTIVE ELEMENT
 a {
   display: inline-block;
   color: #3E3E3E;
-  transition: color;
+  transition-property: color;
   transition-duration: .3s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -681,7 +681,7 @@ button {
   border-radius: .25em;
   transform: scale(1);
 
-  transition: transform, box-shadow background-color border;
+  transition-property: transform, box-shadow background-color border;
   transition-duration: .2s;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
