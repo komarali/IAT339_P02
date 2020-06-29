@@ -636,6 +636,44 @@ Code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_
 }
 
 
+.chip-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+.chip {
+  cursor: default;
+  display: flex;
+  color:#FFF;
+  background-color: #603DFC;
+  margin-right:1rem;
+}
+.chip:hover {
+  box-shadow: 0rem .1rem .2rem rgba(17, 22, 82, 0.5);
+}
+
+.chip__close {
+  display: block;
+  padding: .5rem .75rem;
+  margin: .5rem .5rem;
+  background-color: #7a5cff;
+  color:#FFF;
+}
+
+.chip__close:hover {
+  background-color: #9982ff;
+  color:#FFF;
+}
+
+.chip__label {
+  display: block;
+  padding: 1rem;
+  margin: 0rem;
+  background-color: #603DFC;
+}
+
 
 
 
