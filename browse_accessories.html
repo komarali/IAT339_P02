@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/fku8kit.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -14,10 +15,20 @@
 
   <nav class="nav-container">
     <div class="responsive-container">
-      <a class="logo" href="index.html">
-        <img src="img/logo-icon-only-white.svg" alt="Logo" class="nav-logo">
-      </a>
+      <div class="hamburger-menu-toggle-wrapper">
+        <a class="hamburger-menu-toggle">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
+        <div class="hamburger-menu-toggle-wrapper__brandname">Keytopia</div>
+      </div>
+
+      
       <div class="nav-main">
+        <a class="logo" href="index.html">
+          <img src="img/logo-icon-only-white.svg" alt="Logo" class="nav-logo">
+        </a>
         <a  href="browse_keyboards.html">Keyboards</a>
         <a  href="browse_parts.html">Parts</a>
         <a class="active" href="browse_accessories.html">Accessories</a>

@@ -38,6 +38,11 @@ img {
   max-width: 100%;
 }
 
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
+}
+
 
 /*
 
@@ -120,9 +125,17 @@ nav.nav-container {
   padding-bottom: 1rem;
   /* position: absolute; */
   background-color:#000;
+
+  /* Make the navigation bar sticky */
+  position: fixed;
+  left:0rem;
+  right: 0rem;
+
+  /* stay on top of the page */
+  z-index: 10000; 
 }
 
-nav.nav-container>div.responsive-container, .nav-main {
+.nav-container > .responsive-container, .nav-main {
   padding:0rem;
   display: flex;
   height: auto;
@@ -130,12 +143,35 @@ nav.nav-container>div.responsive-container, .nav-main {
 }
 
 .nav-main {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  display: flex;
+  position: fixed;
+  left: 0rem;
+  right: 0%;
+  top: 0rem;
+  bottom: 0rem;
+  
+  margin-top: 4rem;
+  padding: 20vh 10%;
+
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #000;
+
+  transition: all 200ms ease-out;
+  transition-property: opacity, transform;
+
+  opacity: 0;
+  transform-origin: top left;
+  transform: scale(0);
+}
+
+.nav-main--expanded {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .nav-main > a {
-  display: none;
+  display: block;
 
   /* display: inline-block; */
   margin-right: 1em;
@@ -144,9 +180,11 @@ nav.nav-container>div.responsive-container, .nav-main {
 
   font-weight: normal;
   color:#FFF;
+  
+  margin-top:2vh;
 }
 
-nav > a.active, .nav-main > a.active {
+.nav-main > a.active {
   /* font-weight: bold; */
   color: #603DFC;
 }
@@ -154,7 +192,6 @@ nav > a.active, .nav-main > a.active {
 a.logo > img {
   height: 3rem;
 }
-
 a.logo {
   transform: scale(1);
   
@@ -162,7 +199,6 @@ a.logo {
   transition-duration: .1s;
   transition-timing-function: ease;
 }
-
 a.logo:active {
   transform: scale(.9);
 }
@@ -171,20 +207,101 @@ div.nav-tools {
   display: inline-block;
   margin-left: auto;
 }
-
 div.nav-tools > a {
   margin-left:1em;
 }
-
 div.nav-tools > a > img {
   width:1.5rem;
   height:1.5rem;
 }
 
-@media only screen and (min-width: 480px) {
+/* how navigation looks like on desktop */
+@media only screen and (min-width: 600px) {
+
+  .nav-main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top:0rem;
+    padding: 0rem;
+
+    opacity: 1;
+    transform: none;
+  } 
+
   .nav-main > a {
     display: block;
-  } 
+  
+    /* display: inline-block; */
+    margin-right: 1em;
+    margin-top: 0rem;
+    font-size: 1.2em;
+    text-decoration: none;
+  
+    font-weight: normal;
+    color:#FFF;
+  }
+
+  .hamburger-menu-toggle-wrapper {
+    display: none !important;
+  }
+}
+
+/* 
+  Hamburger Menu
+*/
+
+.hamburger-menu-toggle-wrapper {
+  /* Contains both the hamburger menu toggle and the  */
+  display: flex;
+}
+
+.hamburger-menu-toggle {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-top:.1rem;
+  align-self: center;
+}
+
+.hamburger-menu-toggle > div {
+  display: block;
+
+  width: 100%;
+  height: .15em;
+  padding: 0em;
+  margin-bottom:.6em;
+  transition-property: transform, background-color;
+  transition-duration: .2s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  background-color: #FFF;
+}
+
+.hamburger-menu-toggle--cross > div:nth-child(2) {
+  transform: rotateZ(-45deg);
+  background-color: #FFF;
+}
+.hamburger-menu-toggle--cross > div:nth-child(1) {
+  transform:translate(0em, .75em) rotateZ(-45deg) ;
+  background-color: #FFF;
+}
+.hamburger-menu-toggle--cross > div:nth-child(3) {
+  transform:translate(0em, -.75em) rotateZ(45deg) ;
+  background-color: #FFF;
+}
+
+.hamburger-menu-toggle-wrapper__brandname {
+  align-self: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  color:#FFF;
 }
 
 /*
@@ -438,17 +555,19 @@ a.product-item {
   position: relative;
 
 
-  transition-property: filter, border-color;
+  transition-property: box-shadow, border-color;
   transition-duration: .1s;
   transition-timing-function: ease-in;
 
   border: .2rem solid rgba(94, 59, 252, 0); 
-  filter: drop-shadow(0rem 0rem 0rem rgba(0,0,0,0));
+  /* filter: drop-shadow(0rem 0rem 0rem rgba(0,0,0,0)); */
+  box-shadow: 0rem 0rem 0rem rgba(0,0,0,0);
 
   border-radius: .25rem;
 }
 a.product-item:hover {
-  filter: drop-shadow(0rem .5rem .3rem rgba(0,0,0,.2));
+  /* filter: drop-shadow(0rem .5rem .3rem rgba(0,0,0,.2)); */
+  box-shadow: 0rem .5rem .3rem rgba(0,0,0,.2);
   border: .2rem solid #603DFC;
 }
 
@@ -470,6 +589,9 @@ a.product-item:hover {
 }
 
 .product-item__image {
+  /* auto scale the image so it wouldn't stretch */
+  /* https://alligator.io/css/cropping-images-object-fit/ */
+  object-fit: cover;
   width: 100%;
   height:100%;
   display:block;
