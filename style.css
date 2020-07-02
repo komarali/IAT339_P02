@@ -1,3 +1,10 @@
+/* 
+
+Useful for making easing function
+https://easings.net/#
+
+*/
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,6 +23,7 @@ body {
   padding: 0em;
   font-size: 16px;
   color: #3E3E3E;
+
 }
 
 body.scroll-lock {
@@ -75,43 +83,40 @@ Page Header Module with Breadcrumbs
 
   */
 
-  .page-header-module {
-    margin: 1rem auto;
-    margin-left: 0rem;
-    max-width: 80vw;
-    display: block;
-    height: auto;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
+.page-header-module {
+  margin: 1rem auto;
+  margin-left: 0rem;
+  max-width: 80vw;
+  display: block;
+  height: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
-  ul.breadcrumb {
-    list-style: none;
-    padding-left: 0;
-  }
-  ul.breadcrumb li {
-    display: inline;
-    font-weight: bold;
-  }
-  ul.breadcrumb li+li:before {
-    padding: 0.6rem;
-    color: black;
-    content: "/\00a0";
-  }
-  ul.breadcrumb li a {
-    text-decoration: none;
-    font-weight: normal;
-  }
-  ul.breadcrumb li a:hover {
-    color: #603DFC;
-    text-decoration: underline;
-    transition-property: color;
-    transition-duration: .3s;
-    transition-timing-function: ease-in;
-  }
-
-
-
+ul.breadcrumb {
+  list-style: none;
+  padding-left: 0;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-weight: bold;
+}
+ul.breadcrumb li+li:before {
+  padding: 0.6rem;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  text-decoration: none;
+  font-weight: normal;
+}
+ul.breadcrumb li a:hover {
+  color: #603DFC;
+  text-decoration: underline;
+  transition-property: color;
+  transition-duration: .3s;
+  transition-timing-function: ease-in;
+}
 
 
 /* 
@@ -120,7 +125,7 @@ Navigation
   
   */
 
-nav.nav-container {
+nav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   /* position: absolute; */
@@ -135,7 +140,7 @@ nav.nav-container {
   z-index: 10000; 
 }
 
-.nav-container > .responsive-container, .nav-main {
+nav > .responsive-container, .nav-main {
   padding:0rem;
   display: flex;
   height: auto;
@@ -157,7 +162,7 @@ nav.nav-container {
   align-items: flex-start;
   background-color: #000;
 
-  transition: all 200ms ease-out;
+  transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
   transition-property: opacity, transform;
 
   opacity: 0;
@@ -182,6 +187,10 @@ nav.nav-container {
   color:#FFF;
   
   margin-top:2vh;
+}
+.nav-wrapper {
+  /* Create a padding space under the nav bar so content wont go under it */
+  height:4rem;
 }
 
 .nav-main > a.active {
@@ -213,6 +222,10 @@ div.nav-tools > a {
 div.nav-tools > a > img {
   width:1.5rem;
   height:1.5rem;
+}
+
+.nav-overlapping-fix {
+  margin-top: 4rem !important;
 }
 
 /* how navigation looks like on desktop */
