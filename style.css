@@ -140,11 +140,11 @@ nav {
   transform: translateY(0rem);
 
   /* stay on top of the page */
-  z-index: 10000; 
+  z-index: 10; 
 }
 
 nav.nav-hidden {
-  transform: translateY(-5rem);
+  transform: translateY(-5.5rem);
 }
 
 nav > .responsive-container, .nav-main {
@@ -199,7 +199,7 @@ nav > .responsive-container, .nav-main {
 }
 .nav-wrapper {
   /* Create a padding space under the nav bar so content wont go under it */
-  height:4rem;
+  height:5.1rem;
 }
 
 .nav-main > a.active {
@@ -935,6 +935,15 @@ input[type="text"] {
 input[type="text"]:focus {
   border-color: #603DFC;
   outline: none;
+}
+
+select {  
+  color:#444;
+  background-color: none;
+  border: .1rem solid #444;
+  border-radius: .25rem;
+  padding: .75rem 1rem;
+  width: 100%;
 }
 
 
