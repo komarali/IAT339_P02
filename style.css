@@ -23,7 +23,6 @@ body {
   padding: 0em;
   font-size: 16px;
   color: #3E3E3E;
-
 }
 
 body.scroll-lock {
@@ -136,8 +135,16 @@ nav {
   left:0rem;
   right: 0rem;
 
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: top left;
+  transform: translateY(0rem);
+
   /* stay on top of the page */
   z-index: 10000; 
+}
+
+nav.nav-hidden {
+  transform: translateY(-5rem);
 }
 
 nav > .responsive-container, .nav-main {
@@ -153,7 +160,8 @@ nav > .responsive-container, .nav-main {
   left: 0rem;
   right: 0%;
   top: 0rem;
-  bottom: 0rem;
+
+  height: 100vh;
   
   margin-top: 4rem;
   padding: 20vh 10%;
