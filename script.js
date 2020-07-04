@@ -30,13 +30,14 @@ function setupHamburgerMenu() {
 function setupMenuHideOnScroll() {
 
   let prevScrollpos = window.pageYOffset;
+  let minScrolPos = 30; // when does it start shrinking
 
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
   let navBar = document.querySelector('nav');
 
   window.addEventListener('scroll', (e) => {
     let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos < currentScrollPos) {
+    if (prevScrollpos < currentScrollPos && currentScrollPos > minScrolPos) {
       // hide nav bar here
       if(!navBar.classList.contains('nav-hidden') && !hamburgerMenuToggle.classList.contains('hamburger-menu-toggle--cross'))
         navBar.classList.add('nav-hidden');
