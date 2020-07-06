@@ -1,18 +1,18 @@
 'use strict'
 
-window.addEventListener('load', ()=>{
+window.addEventListener('load', () => {
   setupHamburgerMenu();
   setupMenuHideOnScroll();
 });
 
 function setupHamburgerMenu() {
-  
+
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
   let navMenu = document.querySelector('.nav-main');
 
   hamburgerMenuToggle.addEventListener('click', (e) => {
 
-    if(hamburgerMenuToggle.classList.contains('hamburger-menu-toggle--cross')) {
+    if (hamburgerMenuToggle.classList.contains('hamburger-menu-toggle--cross')) {
       // meaning hamburger already opened
       hamburgerMenuToggle.classList.remove('hamburger-menu-toggle--cross');
       navMenu.classList.remove('nav-main--expanded');
@@ -39,11 +39,11 @@ function setupMenuHideOnScroll() {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos && currentScrollPos > minScrolPos) {
       // hide nav bar here
-      if(!navBar.classList.contains('nav-hidden') && !hamburgerMenuToggle.classList.contains('hamburger-menu-toggle--cross'))
+      if (!navBar.classList.contains('nav-hidden') && !hamburgerMenuToggle.classList.contains('hamburger-menu-toggle--cross'))
         navBar.classList.add('nav-hidden');
     } else {
       // show nav bar here
-      if(navBar.classList.contains('nav-hidden'))
+      if (navBar.classList.contains('nav-hidden'))
         navBar.classList.remove('nav-hidden');
     }
 
@@ -62,15 +62,3 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("resize-animation-stopper");
   }, 400);
 });
-
-
-
-// https://codepen.io/Adhouma/pen/qwPerB
-let displayedImg = document.querySelector("img.displayed-img");
-let images =  document.querySelectorAll(".gallery-bar img");
-
-for(let i = 0; i < images.length; i++){
-    images[i].onclick = function(event){
-        displayedImg.setAttribute("src", event.target.src);
-    }
-}
