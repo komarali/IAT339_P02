@@ -1752,3 +1752,11 @@ About Us
 .gallery-bar img:hover {
   opacity: 0.5;
 }
+
+
+/* product Specifications menu tab */
+
+.specifications {
+  margin: 0 auto;
+  max-width: 20rem;
+}
