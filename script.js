@@ -3,6 +3,8 @@
 window.addEventListener('DOMContentLoaded', () => {
   setupHamburgerMenu();
   setupMenuHideOnScroll();
+
+  setupProductGallery();
 });
 
 function setupHamburgerMenu() {
@@ -49,6 +51,28 @@ function setupMenuHideOnScroll() {
 
     prevScrollpos = currentScrollPos;
   });
+}
+
+function setupProductGallery() {
+  let productGallery = document.querySelector(".product-gallery");
+  if (!productGallery) {
+    console.log('".product-gallery" element not found, abort setting up product gallery');
+    return;
+  }
+
+  console.log('setting up product gallery');
+
+  let displayedImg = document.querySelector('.displayed-img');
+  let galleryBar = document.querySelector('.gallery-bar');
+
+  for (let i = 0; i < galleryBar.children.length; i++) {
+    let currentImgElement = galleryBar.children[i];
+    if (currentImgElement.nodeName == 'IMG') {
+      currentImgElement.addEventListener('click', (e) => {
+        displayedImg.setAttribute('src', e.target.getAttribute('src'));
+      })
+    }
+  }
 }
 
 // Trick adapted from the following link

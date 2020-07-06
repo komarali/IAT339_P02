@@ -1821,6 +1821,12 @@ About Us
   opacity: 0.5;
 }
 
+.displayed-img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
 
 /* product Specifications menu tab */
 
