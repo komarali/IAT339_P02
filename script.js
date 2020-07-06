@@ -62,3 +62,15 @@ window.addEventListener("resize", () => {
     document.body.classList.remove("resize-animation-stopper");
   }, 400);
 });
+
+
+
+// https://codepen.io/Adhouma/pen/qwPerB
+let displayedImg = document.querySelector("img.displayed-img");
+let images =  document.querySelectorAll(".gallery-bar img");
+
+for(let i = 0; i < images.length; i++){
+    images[i].onclick = function(event){
+        displayedImg.setAttribute("src", event.target.src);
+    }
+}
