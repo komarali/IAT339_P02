@@ -494,8 +494,48 @@ ol {
 
 /* hide the side bar when the window is too small */
 .layout__col-side-bar {
-  display: none;
+  display: block;
+  position: fixed;
+  bottom: 0rem;
+  top: 0rem;
+  left: 0rem;
+
+
+  transform: translateX(-100%);
+
+  padding: 3rem;
+  margin: 0rem;
+
+  width: 50vw;
+
+  background-color: #FFF;
+  z-index: 1000;
+  box-shadow: 0rem 0rem 0rem 0rem rgb(0, 0, 0, 0);
+  overflow-y: auto;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 }
+
+.layout__col-side-bar--expanded {
+  transform: translateX(0%);
+  box-shadow: 0rem 0rem 100vw 100vw rgb(0, 0, 0, .5);
+}
+
+/* 
+
+Filter
+
+*/
+
+#side-bar-toggle--open {
+  font-size: 1.3rem;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
 
 /* for center floating elements */
 .responsive-container {
@@ -557,12 +597,23 @@ ol {
     flex-basis: 60em;
   }
 
+  #side-bar-toggle--open,
+  #side-bar-toggle--close {
+    display: none;
+  }
+
   .layout__col-side-bar {
     /* have a consistant sidebar size */
     display: block;
     flex-shrink: 0;
     flex-grow: 0;
     flex-basis: 20em;
+
+    position: relative;
+    transform: translateX(0);
+    padding: 0;
+
+    box-shadow: 0rem 0rem rgba(0, 0, 0, 0);
   }
 
 }
@@ -866,7 +917,6 @@ Code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_
   margin: 0rem;
   background-color: #603DFC;
 }
-
 
 
 

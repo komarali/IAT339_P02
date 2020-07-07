@@ -3,11 +3,33 @@
 window.addEventListener("DOMContentLoaded", () => {
   setupHamburgerMenu();
   setupMenuHideOnScroll();
-
   setupProductGallery();
-
   setupProductFilter();
+  setupExpandableSideBar();
 });
+
+function setupExpandableSideBar() {
+  let sidebar = document.querySelector(".layout__col-side-bar");
+  let expandButton = document.querySelector("#side-bar-toggle--open");
+  let collapseButton = document.querySelector("#side-bar-toggle--close");
+
+  if (!sidebar || !expandButton || !collapseButton) {
+    console.log("sidebar elements not provided, abort setting up sidebar");
+    return;
+  }
+
+  expandButton.addEventListener('click', () => {
+    if (!sidebar.classList.contains('layout__col-side-bar--expanded')) {
+      sidebar.classList.add('layout__col-side-bar--expanded');
+    }
+  });
+  collapseButton.addEventListener('click', () => {
+    if (sidebar.classList.contains('layout__col-side-bar--expanded')) {
+      sidebar.classList.remove('layout__col-side-bar--expanded');
+    }
+  });
+
+}
 
 function setupHamburgerMenu() {
   let hamburgerMenuToggle = document.querySelector(".hamburger-menu-toggle");
