@@ -207,7 +207,7 @@ nav>.responsive-container,
 
 .nav-wrapper {
   /* Create a padding space under the nav bar so content wont go under it */
-  height: 5.1rem;
+  height: 4.1rem;
 }
 
 .nav-main>a.active {
@@ -284,6 +284,11 @@ div.nav-tools>a>img {
 
   .hamburger-menu-toggle-wrapper {
     display: none !important;
+  }
+
+  .nav-wrapper {
+    /* Create a padding space under the nav bar so content wont go under it */
+    height: 5.1rem;
   }
 }
 
