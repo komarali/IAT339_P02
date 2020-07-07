@@ -1,6 +1,6 @@
 "use strict";
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
   setupHamburgerMenu();
   setupMenuHideOnScroll();
   setupProductGallery();
