@@ -603,15 +603,17 @@ div.stickyTitleNoFade>* {
 }
 
 a.product-item {
+  box-sizing: content-box;
+
   cursor: pointer;
 
   display: block;
   position: relative;
 
 
-  transition-property: box-shadow, border-color;
-  transition-duration: .1s;
-  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  transition-property: box-shadow;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
 
   border: .2rem solid rgba(94, 59, 252, 0);
   /* filter: drop-shadow(0rem 0rem 0rem rgba(0,0,0,0)); */
@@ -820,6 +822,7 @@ Code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_
 
 .chip-container {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -831,6 +834,7 @@ Code adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_
   color: #FFF;
   background-color: #603DFC;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 
   transition: box-shadow 200ms cubic-bezier(0.22, 1, 0.36, 1);
 }
