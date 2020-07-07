@@ -1543,9 +1543,12 @@ Review  Page
 }
 
 /* make the button stick to the bottom of the container */
-.product-detials>button {
+.product-detials__controllers {
+  display: flex;
+  flex-direction: column;
   margin-top: auto;
 }
+
 
 .product-gallery>img {
   width: 100%;
