@@ -1635,6 +1635,7 @@ a.step-indicator__step--active {
 }
 
 a.step-indicator__step--inactive {
+  cursor: default;
   background-color: #eee;
   color: #CCC;
 }

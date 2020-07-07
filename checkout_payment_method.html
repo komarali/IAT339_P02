@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +15,7 @@
     <h1>Check out</h1>
     <div class="step-indicator">
       <a href="checkout_address.html" class="step-indicator__step">Delivery</a>
-      <a href="checkout_payment.html" class="step-indicator__step step-indicator__step--active">Payment</a>
+      <a href="#" class="step-indicator__step step-indicator__step--active">Payment</a>
       <a href="#" class="step-indicator__step step-indicator__step--inactive">Review</a>
     </div>
     <div class="step-indicator-text">Step 2 out of 3</div>
@@ -24,7 +25,7 @@
   <section class="responsive-container">
     <div class="layout">
       <div class="layout__col-m">
-        <div class="checkout-payment-module"> 
+        <div class="checkout-payment-module">
           <div class="checkout-form-container">
             <h2>Payment</h2>
             <br>
@@ -37,22 +38,25 @@
               <input type="radio" id="radioPaypal" name="paymentMethod" value="paypal">
               <label for="radioPaypal">Paypal</label>
             </div>
-            <button type="reset" class="button-secondary" onclick="window.location.href='checkout_address.html'">Back</button>
-            <button type="submit" class="button-primary" onclick="window.location.href='checkout_payment.html'">Next</button>
-          </div> 
+            <button type="reset" class="button-secondary"
+              onclick="window.location.href='checkout_address.html'">Back</button>
+            <button type="submit" class="button-primary"
+              onclick="window.location.href='checkout_payment.html'">Next</button>
+          </div>
         </div>
       </div>
       <div class="layout__col-s">
         <div class="cart-checkout-module">
-        <h3>Total</h3>
-        <h2>$338.00</h2>
-        <h4>Tax + Shipping included</h4>
-        <br>
-        <h3>Shipping</h3>
-        <p>Free regular shipping (5 business days)</p>
+          <h3>Total</h3>
+          <h2>$338.00</h2>
+          <h4>Tax + Shipping included</h4>
+          <br>
+          <h3>Shipping</h3>
+          <p>Free regular shipping (5 business days)</p>
+        </div>
       </div>
-    </div>
   </section>
-  
+
 </body>
+
 </html>
