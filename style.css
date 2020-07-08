@@ -1546,7 +1546,7 @@ Review  Page
 .product-detials__controllers {
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+  margin-top: 2rem;
 }
 
 
