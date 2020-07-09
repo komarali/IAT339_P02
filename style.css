@@ -1571,7 +1571,6 @@ Styles for check out sections
 
 a.step-indicator__step {
   display: block;
-  flex-basis: 1;
   width: 100%;
   padding: 1rem 1rem;
   background-color: #eee;
