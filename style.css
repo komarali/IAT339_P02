@@ -1138,6 +1138,10 @@ select {
   list-style-type: none;
 }
 
+footer div div div div {
+  color: rgba(255, 255, 255, .6);
+}
+
 .footer-links-list {
   margin-top: 0;
   padding-left: 0em;
