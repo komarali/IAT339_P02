@@ -63,19 +63,26 @@ Subscription
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  margin-left: 0.3rem;
-  margin-right: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 24rem;
 }
 
 #subscription-email {
   display: inline-block;
-  width: 15rem;
+  max-width: 24rem;
   margin-bottom: 0.6rem;
 }
 
 .subscription-form {
   margin-top: 0.7rem;
   margin-bottom: 0.5rem;
+}
+
+.subscription-form>label {
+  text-align: left;
 }
 
 /* 
