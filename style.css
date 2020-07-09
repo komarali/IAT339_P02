@@ -521,7 +521,7 @@ ol {
 
   background-color: #FFF;
   z-index: 1000;
-  box-shadow: 0rem 0rem 0rem 0rem rgb(0, 0, 0, 0);
+  box-shadow: 0rem 0rem 0rem 0rem rgba(0, 0, 0, 0);
   overflow-y: auto;
 
   transition-property: transform;
@@ -531,7 +531,7 @@ ol {
 
 .layout__col-side-bar--expanded {
   transform: translateX(0%);
-  box-shadow: 0rem 0rem 100vw 100vw rgb(0, 0, 0, .5);
+  box-shadow: 0rem 0rem 100vw 100vw rgba(0, 0, 0, .5);
 }
 
 /* 
