@@ -68,24 +68,25 @@
             <div class="filter-title">
               <h4>Key Switches</h4>
             </div>
-            <label class="checkbox-container">
-              Cheery MX Brown
-              <input type="checkbox" value="Cherry MX Brown">
+            <!-- We know this is triggering the validater but in order for this CSS trick to work, we have to wrap the checkbox inside the label-->
+            <label class="checkbox-container" for="cb_keySwitchCherryMXBrown">
+              Cherry MX Brown
+              <input type="checkbox" value="Cherry MX Brown" id="cb_keySwitchCherryMXBrown">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">
-              Cheery MX Blue
-              <input type="checkbox" value="Cherry MX Blue">
+            <label class="checkbox-container" for="cb_keySwitchCherryMXBlue">
+              Cherry MX Blue
+              <input type="checkbox" value="Cherry MX Blue" id="cb_keySwitchCherryMXBlue">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">
-              Cheery MX Black
-              <input type="checkbox" value="Cherry MX Black">
+            <label class="checkbox-container" for="cb_keySwitchCherryMXBlack">
+              Cherry MX Black
+              <input type="checkbox" value="Cherry MX Black" id="cb_keySwitchCherryMXBlack">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">
-              Cheery MX Red
-              <input type="checkbox" value="Cherry MX Red">
+            <label class="checkbox-container" for="cb_keySwitchCherryMXRed">
+              Cherry MX Red
+              <input type="checkbox" value="Cherry MX Red" id="cb_keySwitchCherryMXRed">
               <span class="checkmark"></span>
             </label>
           </div>
@@ -93,24 +94,24 @@
             <div class="filter-title">
               <h4>Size</h4>
             </div>
-            <label class="checkbox-container">
+            <label class="checkbox-container" for="cb_size60">
               60%
-              <input type="checkbox" value="Size: 60%">
+              <input type="checkbox" value="Size: 60%" id="cb_size60">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">
+            <label class="checkbox-container" for="cb_size65">
               65%
-              <input type="checkbox" value="Size: 65%">
+              <input type="checkbox" value="Size: 65%" id="cb_size65">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">
+            <label class="checkbox-container" for="cb_sizeTkl">
               TKL
-              <input type="checkbox" value="Size: TKL">
+              <input type="checkbox" value="Size: TKL" id="cb_sizeTkl">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">
+            <label class="checkbox-container" for="cb_sizeFull">
               Full Size
-              <input type="checkbox" value="Size: Full Size">
+              <input type="checkbox" value="Size: Full Size" id="cb_sizeFull">
               <span class="checkmark"></span>
             </label>
           </div>
@@ -118,16 +119,19 @@
             <div class="filter-title">
               <h4>Manufacturer</h4>
             </div>
-            <label class="checkbox-container">Brand A
-              <input type="checkbox" value="Brand A">
+            <label class="checkbox-container" for="cb_brandA">
+              Brand A
+              <input type="checkbox" value="Brand A" id="cb_brandA">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">Brand B
-              <input type="checkbox" value="Brand B">
+            <label class="checkbox-container" for="cb_brandB">
+              Brand B
+              <input type="checkbox" value="Brand B" id="cb_brandB">
               <span class="checkmark"></span>
             </label>
-            <label class="checkbox-container">Brand C
-              <input type="checkbox" value="Brand C">
+            <label class="checkbox-container" for="cb_brandC">
+              Brand C
+              <input type="checkbox" value="Brand C" id="cb_brandC">
               <span class="checkmark"></span>
             </label>
           </div>
