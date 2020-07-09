@@ -80,7 +80,7 @@ Subscription
   width: 100%;
   /* max-width: 30rem; */
   text-align: left;
-  margin: .5rem;
+  margin: .5rem 1rem;
 }
 
 .subscription-form div {
@@ -673,7 +673,7 @@ Filter
 .product-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   column-gap: 1em;
   row-gap: 1em;
   width: 100%;
