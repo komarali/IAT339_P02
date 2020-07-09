@@ -673,7 +673,7 @@ Filter
 .product-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(17rem, 1fr));
   column-gap: 1em;
   row-gap: 1em;
   width: 100%;
@@ -700,6 +700,7 @@ a.product-item {
   box-shadow: 0rem 0rem 0rem rgba(0, 0, 0, 0);
 
   border-radius: .25rem;
+  background-color: #EEE;
 }
 
 a.product-item:hover {
