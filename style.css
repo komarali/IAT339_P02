@@ -1443,15 +1443,15 @@ Payment Method Page
 }
 
 .radio-payment label:hover {
-  background-color: #603dfc38;
+  background-color: rgba(96, 61, 252, 0.22);
 }
 
 .radio-payment input[type="radio"]:focus+label {
-  border: 2px solid #603dfc38;
+  border: 2px solid rgba(96, 61, 252, 0.22);
 }
 
 .radio-payment input[type="radio"]:checked+label {
-  background-color: #603dfc38;
+  background-color: rgba(96, 61, 252, 0.22);
   border-color: #603DFC;
   color: #603DFC;
 }
