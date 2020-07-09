@@ -67,22 +67,36 @@ Subscription
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
-  max-width: 24rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  max-width: 40rem;
+
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
 }
 
-#subscription-email {
-  display: inline-block;
-  max-width: 24rem;
-  margin-bottom: 0.6rem;
+
+.subscription-form div label {
+  width: 100%;
+  /* max-width: 30rem; */
+  text-align: left;
+  margin: .5rem;
+}
+
+.subscription-form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-basis: 20rem; */
+}
+
+.subscription-form button {
+  margin: 1rem;
 }
 
 .subscription-form {
   margin-top: 0.7rem;
   margin-bottom: 0.5rem;
-}
-
-.subscription-form>label {
-  text-align: left;
 }
 
 /* 
@@ -1131,7 +1145,11 @@ select {
 }
 
 .footer-links-list>li {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+}
+
+.footer-links-list li a {
+  text-decoration: none;
 }
 
 #hero {
