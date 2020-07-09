@@ -750,22 +750,30 @@ a.product-category-item {
   display: block;
   position: relative;
 
-  transition-property: filter;
-  transition-duration: .1s;
-  transition-timing-function: ease-in;
-
   text-align: center;
   text-decoration: none;
 }
 
-a.product-category-item:hover {
-  filter: drop-shadow(0rem .5rem .3rem rgba(0, 0, 0, .2));
+a.product-category-item .product-category-item__image {
+  transition-property: transform, box-shadow;
+  transition-duration: .3s;
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0rem .5rem .6rem rgba(0, 0, 0, 0);
+}
+
+a.product-category-item:hover .product-category-item__image {
+  box-shadow: 0rem .5rem 1rem rgba(0, 0, 0, .2);
+
+  transform: scale(1.02);
+  /* border: .2rem solid #603DFC; */
+
 }
 
 .product-category-item__image {
   width: 14rem;
   height: 14rem;
-
+  object-fit: cover;
+  background-color: rgba(0, 0, 0, .05);
   border-radius: 50%;
 }
 
